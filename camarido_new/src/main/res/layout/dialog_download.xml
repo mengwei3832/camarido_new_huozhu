@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        android:text="@string/down_msg"
+        android:gravity="center"
+        android:textColor="@color/color_229AEE"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"
+        android:background="@color/color_229AEE" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_229AEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/space_35"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_5"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/color_ffffff"
+                android:text="@string/repeat_cancel" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/space_35"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/color_ffffff"
+                android:text="@string/update" />
+        </LinearLayout>
+
+        <com.yunqi.clientandroid.utils.NumberSeekBar
+            android:id="@+id/bar0"
+            style="@style/NumberProgressBar_Default"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_height="0dp"
+            android:focusable="false"
+            android:max="100"
+            android:progressDrawable="@drawable/numberseekbar_background"
+            android:thumb="@drawable/thumb_bar" />
+    </LinearLayout>
+
+</LinearLayout>

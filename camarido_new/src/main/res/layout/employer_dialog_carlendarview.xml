@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppw_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_400"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50" >
+
+            <TextView
+                android:id="@+id/tv_calendar_cancle"
+                android:layout_width="@dimen/space_80"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/btn_cancle"
+                android:textColor="@color/color_ff4400"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_calendar_sure"
+                android:layout_width="@dimen/space_80"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/color_00bbff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_bebebe" />
+
+        <CalendarView
+            android:id="@+id/cv_quote_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:firstDayOfWeek="1"
+            android:selectedDateVerticalBar="@color/color_00bbff"
+            android:selectedWeekBackgroundColor="#00000000"
+            android:shownWeekCount="4" />
+    </LinearLayout>
+
+</RelativeLayout>

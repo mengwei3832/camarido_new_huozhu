@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_carinputcode_promptinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_35"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_18"
+            android:text="@string/tv_carinputcode_promptinfo"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_carinputcode_invitationcode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_17"
+            android:background="@drawable/login_biankuang" >
+
+            <EditText
+                android:id="@+id/et_carinputcode_invitationcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_biankuang"
+                android:hint="@string/et_carinputcode_invitationcode"
+                android:inputType="number"
+                android:paddingLeft="@dimen/space_20"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc" />
+
+            <ImageView
+                android:id="@+id/iv_carinputcode_delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_37"
+                android:src="@drawable/login_delete"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_carinputcode_validation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/btn_carinputcode_validation"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_modifyAudit_global_employer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_modifyAudit_address_employer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:background="@color/color_229AEE"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_modifyAudit_provenance_employer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jiantouticket" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_modifyAudit_destination_employer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:background="@color/color_e4e4e4" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/modifyAudit_refreshlistview_employer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_F9F9F9" />
+    </LinearLayout>
+
+    <!--<ProgressBar
+        android:id="@+id/pb_modifyAudit_progress_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />-->
+
+    <include
+        android:id="@+id/pb_modifyAudit_progress_employer"
+        layout="@layout/employer_progress_include"
+        android:visibility="gone"/>
+
+    <ImageView 
+        android:id="@+id/iv_modifyAudit_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blank_words"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/color_ffffff"
+        android:layout_alignParentBottom="true">
+        <Button 
+            android:id="@+id/bt_auditmodify_stop_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employer_fragment_modify_stop_ticket"
+            android:background="@drawable/sendbao_btn_background"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

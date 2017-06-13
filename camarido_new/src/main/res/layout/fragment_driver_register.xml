@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9" 
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:id="@+id/et_register_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/register_phone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_register_delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_register_phone"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:id="@+id/et_register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/register_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_register_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/password_hide"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register_pwdrepeat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_register_pwd"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:id="@+id/et_register_invitecode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/invite_code"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_register_delete3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_register_verificationcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_register_pwdrepeat"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_register_verificationcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_weight="1"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/verification"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_20"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <Button
+            android:id="@+id/bt_register_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/register_button_selector"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:text="@string/codelogin_bt_validation"
+            android:textColor="@drawable/verification_textcolor_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- <RadioGroup 
+        android:orientation="horizontal"
+        android:layout_below="@id/rl_register_verificationcode"
+        android:id="@+id/rg_figure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/space_13"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/space_35">
+        <RadioButton
+            android:id="@+id/rb_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_tab_right"
+            android:checked="true"
+            android:button="@drawable/employer_register_choose_selector"
+            android:textSize="17sp"/>
+        <RadioButton 
+            android:text="@string/register_tab_left"
+            android:textSize="17sp"
+            android:id="@+id/rb_diver" 
+            android:layout_marginLeft="@dimen/space_10"
+            android:button="@drawable/employer_register_choose_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_register_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_11"
+        android:layout_below="@+id/rg_figure">
+        <ImageView 
+            android:id="@+id/iv_register_jingshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warning"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_toRightOf="@+id/iv_register_jingshi"
+            android:text="@string/register_choose_shenfen"/>
+    </RelativeLayout> -->
+    
+    <Button
+        android:id="@+id/bt_register_agreed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@+id/rl_register_verificationcode"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/agreed_register"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_register_agreed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_12" >
+
+        <TextView
+            android:id="@+id/tv_register_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_terms"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_register_terms"
+            android:text="@string/login_agreement"
+            android:textColor="@color/color_229AEE"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

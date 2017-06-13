@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/logout_dialog_bag">
+
+    <TextView
+        android:id="@+id/tv_is_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_is_logout"
+        android:textColor="#303030"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_is_logout_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_is_logout_tip"
+        android:textColor="#303030"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#D7D7D7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/block_bg"
+            android:text="@string/btn_cancle"
+            android:textColor="#2299EE" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D7D7D7" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/block_bg"
+            android:text="@string/btn_sure"
+            android:textColor="#2299EE" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eeeeee" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_yijia_history"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_22"
+                android:background="@color/color_ff4444"
+                android:gravity="center"
+                android:text="@string/employer_activity_quote_yijia_title"
+                android:textColor="@color/color_ffffff"
+                android:textSize="11sp" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_yijia_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_yijia_input"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_AFAFAF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44" >
+
+                <EditText
+                    android:id="@+id/et_quote_yijia_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/employer_activity_quote_yijia_money"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/space_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/employer_activity_quote_yijia_danwei"
+                    android:textColor="@color/color_00bbff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44" >
+
+                <EditText
+                    android:id="@+id/et_quote_yijia_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/employer_activity_quote_yijia_car"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/space_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/employer_activity_quote_yijia_danwei1"
+                    android:textColor="@color/color_00bbff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_quote_yijia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/sendbao_btn_background"
+                    android:text="@string/employer_item_quote_yijia"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ProgressBar
+        android:id="@+id/pb_quote_yijia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />-->
+
+    <include
+        android:id="@+id/pb_quote_yijia"
+        layout="@layout/employer_progress_include"
+        android:visibility="gone"/>
+
+</RelativeLayout>

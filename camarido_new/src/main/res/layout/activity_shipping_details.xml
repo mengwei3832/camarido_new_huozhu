@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yunqi.clientandroid.employer.activity.ShippingDetailsActivity">
+    <ListView
+        android:id="@+id/lv_ship_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"></ListView>
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/progress_ship_detail"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/iv_ship_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/blank_words"
+        android:visibility="gone"/>
+</RelativeLayout>

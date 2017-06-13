@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_55"
+                android:layout_weight="2.5" >
+
+                <TextView
+                    android:id="@+id/tv_employer_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/employer_activity_cartype_number"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_45"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_f1f1f1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_55"
+                android:layout_weight="7.5" >
+
+                <EditText
+                    android:id="@+id/et_cartype_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/employer_activity_cartype_number_hint"
+                    android:paddingLeft="@dimen/space_10" />
+
+                <TextView
+                    android:id="@+id/tv_employer_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:text="@string/employer_activity_cartype_number_che"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_f1f1f1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5" >
+
+                <TextView
+                    android:id="@+id/tv_employer_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/employer_activity_cartype_number_audit"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5" >
+
+                <ListView
+                    android:id="@+id/lv_cartype_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/bt_cartype_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_cartype"
+        android:layout_margin="@dimen/space_5"
+        android:text="@string/employer_activity_finish"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"/>
+
+    <ProgressBar
+        android:id="@+id/pb_cartype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

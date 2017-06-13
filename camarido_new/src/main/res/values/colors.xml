@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--分割线-->
+    <color name="dividerdefault">#d9d9d9</color>
+
+    <color name="dividerSecond">#d9d9d9</color>
+
+    <!--字体颜色-->
+    <color name="textTitleColor">#262626</color>
+
+    <color name="textNomalColor">#a5a5a5</color>
+
+    <color name="customGreen">#f04430</color>
+    <color name="customRed">#f04430</color>
+
+
+    <color name="textWithRed">#fff5f5</color>
+    <color name="textWithGreen">#fff5f5</color>
+
+
+    <color name="hintColor">#D6D6D6</color>
+    <!--默认的app的背景-->
+    <color name="appDefaultBackground">#f8f2f2</color>
+    <color name="carlistBackground">#f9f9f9</color>
+
+    <!--默认的app每一块的背景-->
+    <color name="appDefaultSingleBlockBackground">@android:color/white</color>
+
+
+    <!--一般的字体颜色-->
+    <color name="nomalTextColor">#a5a5a5</color>
+    
+    <!-- 背景颜色 -->
+	<color name="color_dfdfdf">#dfdfdf</color>
+
+    <!--new colors-->
+
+    
+
+    <color name="nTextWithRed">#fff5f5</color>
+
+    <!--#ff9d14-->
+    <color name="nCustomYellow">#ee402c</color>
+
+    <!--#34aadc-->
+    <color name="nCustomBlue">#ef5c29</color>
+
+    <!--#ea3d8d-->
+    <color name="nCustomOrange">#f02b55</color>
+
+    <color name="nCustomBlack">#3c3837</color>
+
+    
+
+    <color name="nWhiteItemSeleted">#f8f2f1</color>
+
+    <color name="nRedItemSeleted">#924940</color>
+
+    <color name="hanfcolor">#888f9290</color>
+
+
+    <color name="appointBallFaColor">#EF6807</color>
+    <color name="competitionFaColor">#4D82C5</color>
+    <color name="orderFaColor">#DD6E9E</color>
+    <color name="allFaColor">#6A807F</color>
+    <color name="pkFaColor">#50C3C1</color>
+
+    <color name="color_0">#dedede</color>
+    <color name="color_00bbff">#00bbff</color>
+    <color name="color_cceeff">#cceeff</color>
+    <color name="color_cfcfcf">#cfcfcf</color>
+    <color name="color_115588">#115588</color>
+    <color name="color_55bbff">#55bbff</color>
+    <color name="color_ff6633">#ff6633</color>
+    <color name="color_AFAFAF">#AFAFAF</color>
+    <color name="color_58bafe">#58bafe</color>
+    <color name="color_77ddff">#77ddff</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_2299EE">#2299EE</color>
+    <color name="color_edf3f6">#edf3f6</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="color_585858">#585858</color>
+    <color name="color_1">#7cc576</color>
+    <color name="color_2">#2a4253</color>
+    <color name="color_3">#f26d7e</color>
+    <color name="color_4">#a286c0</color>
+    <color name="color_444444">#444444</color>
+    <!-- actionbar的颜色 -->
+    <color name="color_1186d9">#1186d9</color>
+    <color name="color_2c9ceb">#2c9ceb</color>
+    <color name="color_229AEE">#229AEE</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_22bb22">#22bb22</color>
+    <color name="color_909090">#909090</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_afafaf">#afafaf</color>
+    <color name="color_ffee99">#ffee99</color>
+    <color name="color_3aaefe">#3aaefe</color>
+    <color name="color_d1d1d1">#d1d1d1</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_ffdd00">#ffdd00</color>
+    <color name="color_ff8811">#ff8811</color>
+    <color name="color_fc5252">#fc5252</color>
+    <color name="color_8c40f0">#8c40f0</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="color_edebf0">#edebf0</color>
+    <color name="color_F75B47">#F75B47</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_e0dedc">#e0dedc</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_6c6c6c">#6c6c6c</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_ff4400">#ff4400</color>
+    <color name="color_ff4444">#ff4444</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_606060">#606060</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_bebebe">#bebebe</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_b5b5b5">#b5b5b5</color>
+    <color name="color_c3c0c0">#c3c0c0</color>
+    <color name="color_ffff00">#ffff00</color>
+    <color name="color_ececec">#ececec</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+
+    <color name="common_line_color">#C0C0C0</color>
+    <color name="bg">#ededef</color>
+    <color name="setting_divider">#9c9a9b</color>
+    <color name="none">#00000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="white40">#ffffff</color>
+
+    <drawable name="tab_item_bg_normal">#ededef</drawable>
+    <drawable name="tab_item_bg_pressed">#f85450</drawable>
+
+    <color name="back_bg_color_selector">#20000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="order_detail">#313131</color>
+    <color name="order_car_number">#2299EE</color>
+    <color name="order_car_status">#ff0000</color>
+    <color name="order_status">#ff4400</color>
+    <color name="mine_gap">#f5f5f5</color>
+    <color name="order_backound">#EDEDED</color>
+    <color name="order_popu_backround">#F4F4F4</color>
+    <color name="discover_edittext_background">#F3F3F3</color>
+    <color name="homen_price_background">#f59025</color>
+    <color name="order_from_color">#7f7f7f</color>
+    <color name="wallet_freeze">#44ffffff</color>
+    <color name="wallet_income">#646464</color>
+    <color name="attention_text_color">#767676</color>
+    <color name="attention_first_text_color">#333</color>
+    <color name="attention_third_text_color">#575757</color>
+    <color name="tag_color">#FC461E</color>
+    <color name="employer_search">#c3c3c3</color>
+    <color name="color_22ac38">#22ac38</color>
+    <color name="color_cc6941">#cc6941</color>
+
+    <!-- 键盘按钮颜色 -->
+    <color name="color_d4d4d4">#d4d4d4</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+</resources>

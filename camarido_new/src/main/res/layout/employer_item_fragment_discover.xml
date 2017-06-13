@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/list_background_seletor" >
+
+        <ImageView
+            android:id="@+id/iv_item_discover_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_20"
+            android:src="@drawable/xinwen" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@drawable/mine_arrow" />
+
+        <TextView
+            android:id="@+id/tv_item_discover_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="84dp"
+            android:text="@string/employer_discover_item_xinwen"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</LinearLayout>

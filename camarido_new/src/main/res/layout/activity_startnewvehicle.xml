@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_startnewvehicle_carnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_18"
+            android:text="@string/tv_startnewvehicle_carnumber"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_startnewvehicle_inputcarnumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_17"
+            android:background="@drawable/login_biankuang" >
+            
+            <LinearLayout 
+                android:id="@+id/ll_startnewvehicle_choose"
+                android:layout_width="@dimen/space_90"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_xiala_bg">
+                <TextView 
+                    android:id="@+id/tv_startnewvehicle_jiancheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="晋"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_ffffff"/>
+                
+                <ImageView 
+                    android:id="@+id/iv_startnewvehicle_jiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_9"
+                    android:src="@drawable/xiala"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_startnewvehicle_inputcarNum"
+                android:layout_toRightOf="@+id/ll_startnewvehicle_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_biankuang"
+                android:hint="@string/et_startnewvehicle_inputcarnumber"
+                android:paddingLeft="@dimen/space_20"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc" />
+
+            <ImageView
+                android:id="@+id/iv_et_startnewvehicle_delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_37"
+                android:src="@drawable/login_delete"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tv_startnewvehicle_carcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_18"
+            android:text="@string/tv_newvehile_geichecall"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_startnewvehicle_inputcarcall"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_17"
+            android:background="@drawable/login_biankuang" >
+
+            <EditText
+                android:id="@+id/et_startnewvehicle_inputcarCall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_biankuang"
+                android:hint="@string/et_startnewvehicle_inputcarcall"
+                android:paddingLeft="@dimen/space_20"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc" />
+
+            <ImageView
+                android:id="@+id/iv_et_startnewvehicle_delete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_37"
+                android:src="@drawable/login_delete"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_25"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_vehiclemsg_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_60"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_vehiclemsg_personal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@drawable/vehicle_radiobutton"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="@string/vehicle_personal"
+                    android:textColor="@color/color_333333"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_vehiclemsg_enterprise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@drawable/vehicle_radiobutton"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="@string/vehicle_enterprise"
+                    android:textColor="@color/color_333333"
+                    android:textSize="17sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_startnewvehicle_nextstep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/bt_startnewvehicle_nextstep"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+    
+    <GridView 
+        android:id="@+id/gv_startnewvehicle_sheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_7"
+        android:numColumns="7"
+        android:layout_alignParentBottom="true"
+        android:horizontalSpacing="@dimen/space_6"
+        android:verticalSpacing="@dimen/space_6"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_162" >
+
+        <com.yunqi.clientandroid.view.ViewPagerExpand
+            android:id="@+id/vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.yunqi.clientandroid.view.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/indicator"
+        CircleIndicator:ci_background="#999966"
+        CircleIndicator:ci_selected_background="#FF0000"
+        CircleIndicator:ci_mode="outside"
+        CircleIndicator:ci_gravity="center"
+        CircleIndicator:ci_radius="3dp"
+        CircleIndicator:ci_margin="5dp"
+        />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="@string/order_custom"
+        android:textColor="@color/order_detail"
+        android:textSize="@dimen/space_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+    <ImageView
+        android:id="@+id/iv_no_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:orientation="horizontal"
+        android:src="@drawable/home_no_order"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_current_pagerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:visibility="gone" >
+
+        <com.yunqi.clientandroid.view.ViewPagerExpand
+            android:id="@+id/vp_current_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_current_pagerPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_5"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hot_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_8"
+        android:paddingRight="@dimen/space_8"
+        android:paddingTop="@dimen/space_10" >
+
+        <TextView
+            android:id="@+id/tv_custom_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hot_order"
+            android:textColor="@color/order_detail"
+            android:textSize="@dimen/space_16" />
+
+        <TextView
+            android:id="@+id/tv_home_order_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_custom_order"
+            android:layout_marginRight="@dimen/space_8"
+            android:text="@string/watch_more"
+            android:textColor="@color/color_808080"
+            android:textSize="@dimen/space_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+</LinearLayout>

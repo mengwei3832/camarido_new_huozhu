@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <LinearLayout
+        android:id="@+id/ll_chengyun_tongji"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical" >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.3"
+                android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_tongji_begin"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5.5"
+                            android:gravity="center_horizontal|bottom"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text=""
+                            android:textColor="@color/color_303030"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tongji_begin_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4.5"
+                            android:gravity="center_horizontal|top"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text=""
+                            android:textColor="@color/color_606060"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/packagedetail_direction" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_tongji_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5.5"
+                            android:gravity="center_horizontal|bottom"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text=""
+                            android:textColor="@color/color_303030"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tongji_end_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4.5"
+                            android:gravity="center_horizontal|top"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text=""
+                            android:textColor="@color/color_606060"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_00bbff" />
+
+                    <View
+                        android:layout_width="@dimen/space_24"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_00bbff" />
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.7"
+                android:orientation="horizontal">
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employer_activity_tongji_daizhixing"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="12sp"/>
+                    <TextView 
+                        android:id="@+id/tv_tongji_daizhixing_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employer_activity_tongji_car_number"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="12sp"/>
+                    <TextView 
+                        android:id="@+id/tv_tongji_zaituzhong_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employer_activity_tongji_daijiesuan"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="12sp"/>
+                    <TextView 
+                        android:id="@+id/tv_tongji_daijiesuan_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employer_activity_tongji_yijiesuan"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="12sp"/>
+                    <TextView 
+                        android:id="@+id/tv_tongji_yijiesuan_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_bebebe"/>
+        
+        <TextView 
+            android:id="@+id/tv_tongji_yeshu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_30"
+            android:text=""
+            android:textSize="11sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_15"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:background="@color/color_ffffff" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_tongji_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <RelativeLayout
+                android:id="@+id/rl_tongji_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/blank_words" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_5"
+            android:background="@drawable/tongji_bottom_touying" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/employer_activity_tongji_heji"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_tongji_vehicle_sumnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="车次  车"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_tongji_kuangfa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="矿发  吨"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_tongji_qianshou"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="签收  吨"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_edf3f6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_5" >
+
+                <com.yunqi.clientandroid.view.MarqueeTextView
+                    android:id="@+id/tv_tongji_sunyunfei"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+                <Button
+                    android:id="@+id/bt_tongji_tubiao"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/packagedetail_btn_left_background"
+                    android:layout_margin="@dimen/space_10"
+                    android:text="@string/employer_activity_tongji_tubiao"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="16sp"/>
+                <Button 
+                    android:id="@+id/bt_tongji_daochu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sendbao_btn_background"
+                    android:layout_margin="@dimen/space_10"
+                    android:text="@string/employer_activity_tongji_daochu"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <ProgressBar
+        android:id="@+id/pb_tongji_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" /> -->
+
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_tongji_bar"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"
+        ></com.yunqi.clientandroid.utils.ProgressWheel>
+</RelativeLayout>

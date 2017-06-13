@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+                android:id="@+id/lv_home_hot_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/order_backound"
+                android:dividerHeight="@dimen/space_10"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                >
+        </ListView>
+
+
+</LinearLayout>

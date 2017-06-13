@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_history_from"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_110"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_history_from_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_13"
+                        android:text="@string/order_start"
+                        android:textColor="@color/order_detail"
+                        android:textSize="@dimen/space_15" />
+
+                    <TextView
+                        android:id="@+id/tv_history_province_start_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_50"
+                        android:background="@drawable/order_from_background"
+                        android:gravity="center"
+                        android:text="@string/order_province"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+
+                    <TextView
+                        android:id="@+id/tv_history_city_start_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_40"
+                        android:background="@drawable/order_from_background"
+                        android:gravity="center"
+                        android:text="@string/order_city"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_history_from_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_23"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_13"
+                        android:text="@string/order_end"
+                        android:textColor="@color/order_detail"
+                        android:textSize="@dimen/space_15" />
+
+                    <TextView
+                        android:id="@+id/tv_history_province_end_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_50"
+                        android:background="@drawable/order_from_background"
+                        android:gravity="center"
+                        android:text="@string/order_province"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+
+                    <TextView
+                        android:id="@+id/tv_history_city_end_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_40"
+                        android:background="@drawable/order_from_background"
+                        android:gravity="center"
+                        android:text="@string/order_city"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_e4e4e4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_80"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:text="@string/myticket_historyTimeScope"
+                    android:textColor="@color/order_detail"
+                    android:textSize="@dimen/space_15" />
+
+                <TextView
+                    android:id="@+id/tv_history_time_min"
+                    android:layout_width="@dimen/space_91"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:background="@drawable/order_edittext"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:src="@drawable/order_line" />
+
+                <TextView
+                    android:id="@+id/tv_history_time_max"
+                    android:layout_width="@dimen/space_91"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/order_edittext"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_e4e4e4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_95"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:text="@string/order_type"
+                    android:textColor="@color/order_detail"
+                    android:textSize="@dimen/space_15" />
+
+                <RadioGroup
+                    android:id="@+id/rg_history_order_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_history_invalid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:background="@drawable/order_filter_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/myticket_historyInvalid"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+
+                    <RadioButton
+                        android:id="@+id/rb_history_complete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:background="@drawable/order_filter_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/myticket_historyComplete"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_e4e4e4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginTop="@dimen/space_13"
+                android:text="@string/order_catory"
+                android:textColor="@color/order_detail"
+                android:textSize="@dimen/space_15" />
+
+            <com.yunqi.clientandroid.view.FlowRadioGroup
+                android:id="@+id/rg_history_filter_catory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </com.yunqi.clientandroid.view.FlowRadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90" >
+
+        <View
+            android:id="@+id/view_history_rl_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_e4e4e4" />
+
+        <ImageButton
+            android:id="@+id/iv_history_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_history_rl_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_8"
+            android:background="@drawable/historyreset_button_selector" />
+
+        <Button
+            android:id="@+id/btn_history_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/sure"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

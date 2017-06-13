@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppw_bg" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_42"
+            android:background="@color/color_ececec"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_xing_carbasic_quxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_30"
+                android:text="@string/repeat_cancel"
+                android:textColor="@color/color_ff4400"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_xing_carbasic_queding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_30"
+                android:text="@string/sure"
+                android:textColor="@color/color_229AEE"
+                android:textSize="@dimen/space_16" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/rl_update_age_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_xing_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_28"
+                android:text="@string/carbasic_first_to_second"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

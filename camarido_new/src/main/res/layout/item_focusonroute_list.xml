@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_110"
+    android:orientation="vertical" 
+    android:background="#f9f9f9"
+    >
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_110"
+        android:layout_marginLeft="@dimen/space_10"
+  		android:layout_marginRight="@dimen/space_10"
+  		android:background="@drawable/focusonroute_listbg"
+        >
+        
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        >
+        
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         >
+       
+      <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/route_provenance"
+          />   
+         
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="14dp"
+          android:gravity="center_vertical"
+          android:text="@string/route_provenance"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />  
+          
+      <TextView
+          android:id="@+id/tv_focuson_provenance" 
+          android:layout_width="105dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="31dp"
+          android:gravity="center_vertical"
+          android:ellipsize="none"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />
+         
+     </LinearLayout>   
+     
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="13dp"
+         android:gravity="center_vertical"
+         >
+      
+      <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/route_destination"
+          /> 
+         
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="14dp"
+          android:gravity="center_vertical"
+          android:text="@string/route_destination"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />  
+          
+      <TextView
+          android:id="@+id/tv_focuson_destination" 
+          android:layout_width="105dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="31dp"
+          android:gravity="center_vertical"
+          android:ellipsize="none"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />   
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="13dp"
+         android:gravity="center_vertical"
+         >
+      
+       <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/canrob_waybill"
+        /> 
+         
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:gravity="center_vertical"
+          android:text="@string/packdetail_waybillcount"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />  
+          
+      <TextView
+          android:id="@+id/tv_focuson_waybill" 
+          android:layout_width="105dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:gravity="center_vertical"
+          android:ellipsize="none"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          />   
+         
+     </LinearLayout>
+     
+    </LinearLayout>    
+    
+    <Button
+        android:id="@+id/bt_focuson_packageType" 
+        android:layout_width="68.5dp"
+        android:layout_height="31.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11.5dp"
+        android:layout_marginTop="13.5dp"
+        android:background="@drawable/bt_waybill"
+    	android:textSize="15sp"
+    	android:textColor="#fff"
+    	android:gravity="center"
+    	android:focusable="false"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11.5dp"
+        >
+      
+      <TextView
+          android:id="@+id/tv_focuson_valuation" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          android:text="估计38.00/吨"
+          
+          />  
+          
+      <LinearLayout
+          android:id="@+id/ll_focuson_subsidies"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:visibility="gone"
+          >
+      
+      <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/route_subsidies"
+          />
+          
+      <TextView
+          android:id="@+id/tv_focuson_subsidies"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:gravity="center_vertical"
+          android:textSize="15sp"
+          android:textColor="#333333"
+          android:text="无补助金额"
+          />
+        
+        </LinearLayout>
+    </RelativeLayout>
+        
+    </RelativeLayout>     
+
+</LinearLayout>

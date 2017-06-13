@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppw_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_420"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_42"
+            android:background="#ececec"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_input_cancle_pay"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:text="@string/repeat_cancel"
+                android:gravity="center"
+                android:textColor="@color/color_ff4400"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_input_sure_pay"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/sure"
+                android:gravity="center"
+                android:textColor="@color/color_229AEE"
+                android:textSize="@dimen/space_16" />
+        </RelativeLayout> -->
+
+        <TextView
+            android:id="@+id/tv_actual_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_25"
+            android:text="应结金额（现金）:21.88"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_15"
+            android:text="@string/audit_input_pay_pass"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_pass_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_horizontal" >
+
+            <com.yunqi.clientandroid.view.StarPassword
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/sp_password"
+                android:cursorVisible="false"
+                android:textColor="#00000000"
+                android:inputType="none"
+                >
+                
+            </com.yunqi.clientandroid.view.StarPassword>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_pass_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:horizontalSpacing="@dimen/space_2"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/space_1" >
+    </GridView>
+
+    <ProgressBar 
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/password_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</RelativeLayout>

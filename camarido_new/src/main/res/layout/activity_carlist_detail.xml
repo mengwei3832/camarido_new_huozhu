@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/carlist_detail_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_carlist_basic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/carlist_basic_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/rb_carlist_basic"
+            android:textColor="@drawable/carlist_reserve_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rb_carlist_drivermsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/carlist_basic_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/rb_carlist_drivermsg"
+            android:textColor="@drawable/carlist_reserve_selector"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_carlist_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

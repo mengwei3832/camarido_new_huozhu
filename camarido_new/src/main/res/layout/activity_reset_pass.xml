@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_safety_reset_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="#fff">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/my_safety_reset_pass"
+            android:paddingLeft="@dimen/space_15"
+            android:textSize="18sp"
+            android:textColor="#333"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiantouyou"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/space_15"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_safety_forget_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:layout_marginTop="@dimen/space_1"
+        android:background="#fff">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/my_safety_forget_pass"
+            android:paddingLeft="@dimen/space_15"
+            android:textSize="18sp"
+            android:textColor="#333"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiantouyou"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/space_15"/>
+    </RelativeLayout>
+    
+    
+    <TextView 
+        android:id="@+id/tv_safety_help"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:paddingBottom="@dimen/space_62"
+        android:text="@string/easy_question"
+        android:textSize="14sp"
+        android:textColor="#ff0000"/>
+
+</LinearLayout>

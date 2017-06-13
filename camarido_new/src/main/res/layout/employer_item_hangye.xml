@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+            <TextView 
+                android:id="@+id/tv_hangye_lie_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21312313132"
+                android:textColor="@color/color_444444"
+                android:layout_marginLeft="@dimen/space_15"
+                android:textSize="13sp"/>
+            <TextView 
+                android:id="@+id/tv_hangye_lie_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textColor="@color/color_444444"
+                android:layout_marginRight="@dimen/space_20"
+                android:textSize="13sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+            <TextView 
+                android:id="@+id/tv_hangye_lie_content"
+                android:layout_width="@dimen/space_200"
+                android:layout_height="wrap_content"
+                android:text="21312313132"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_444444"
+                android:layout_marginLeft="@dimen/space_15"
+                android:textSize="13sp"/>
+            <TextView 
+                android:id="@+id/tv_hangye_lie_autor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textColor="@color/color_444444"
+                android:layout_marginRight="@dimen/space_20"
+                android:textSize="13sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_f1f1f1" />
+    </LinearLayout>
+
+</LinearLayout>

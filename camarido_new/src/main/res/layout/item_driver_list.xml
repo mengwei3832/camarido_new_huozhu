@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_100"
+    android:background="@color/color_F9F9F9" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_11"
+        android:layout_marginRight="@dimen/space_11"
+        android:background="@drawable/driverlist_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8" >
+
+            <com.yunqi.clientandroid.view.CircleImageView
+                android:id="@+id/iv_driverlist_header"
+                android:layout_width="@dimen/space_37"
+                android:layout_height="@dimen/space_37"
+                android:layout_marginLeft="@dimen/space_20"
+                android:src="@drawable/driverlistphoto"
+                app:border_color="@color/color_229AEE"
+                app:border_width="@dimen/space_2" />
+
+            <TextView
+                android:id="@+id/tv_driverlist_driverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_toRightOf="@id/iv_driverlist_header"
+                android:textColor="@color/color_229AEE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_driverlist_drivertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15" >
+
+            <TextView
+                android:id="@+id/tv_driverlist_UserPhoneMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:text="@string/driver_UserPhoneMsg"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_driverlist_UserPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_driverlist_UserPhoneMsg"
+                android:layout_toRightOf="@id/tv_driverlist_UserPhoneMsg"
+                android:textColor="@color/color_229AEE"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_driverlist_opcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_driverlist_UserPhoneMsg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_driverlist_logincount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_driverlist_UserPhoneMsg"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_toLeftOf="@id/tv_driverlist_opcount"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:paddingTop="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_safe_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:background="@drawable/block_bg"
+            android:id="@+id/tv_pay_password"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:drawableEnd="@drawable/safe_jiantou"
+            android:drawableRight="@drawable/safe_jiantou"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/tv_pay_password"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_forget_pay_password"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@id/tv_pay_password"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/block_bg"
+            android:drawableEnd="@drawable/safe_jiantou"
+            android:drawableRight="@drawable/safe_jiantou"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/tv_forget_pay_password"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fqa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="44dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tv_fqa"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_safe_center"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="31dp" />
+
+</RelativeLayout>

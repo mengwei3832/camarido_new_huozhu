@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RadioGroup 
+        android:id="@+id/rg_alert_ceshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/rb_alert_bug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试环境"/>
+        <RadioButton 
+            android:id="@+id/rb_alert_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo环境"/>
+        <RadioButton 
+            android:id="@+id/rb_alert_zhengshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正式环境"/>
+    </RadioGroup>
+
+</RelativeLayout>

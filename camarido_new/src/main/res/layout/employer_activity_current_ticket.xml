@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_current_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_38"
+        android:background="@color/color_77ddff" >
+
+        <LinearLayout
+            android:id="@+id/ll_current_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employer_activity_current_bianhao"
+                android:textColor="@color/color_ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_current_ticket_bianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textColor="@color/color_ffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_current_ticket_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+			android:gravity="center_vertical"            
+            android:layout_marginRight="@dimen/space_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_current_ticket_textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employer_activity_current_ticket_all"
+                android:textColor="@color/color_ffffff"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_current_ticket_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:src="@drawable/xiajiantou" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"
+        android:layout_below="@+id/rl_all"
+        android:background="@color/color_ffffff" >
+		<EditText 
+		    android:id="@+id/et_search_input_employer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:hint="@string/please_input_search"
+		    android:textSize="12sp"
+		    android:paddingLeft="@dimen/space_10"
+		    android:layout_marginLeft="@dimen/space_10"
+		    android:layout_marginRight="@dimen/space_10"
+		    android:background="@drawable/waybill_sousuokuang"/>
+		<TextView 
+		    android:id="@+id/tv_bt_search"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/color_ffffff"
+		    android:gravity="center"
+		    android:textSize="15sp"
+		    android:text="@string/employer_activity_current_search"
+		    android:background="@drawable/watbill_btn_sousuo"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="@dimen/space_10"
+		    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_below="@+id/rl_search" 
+        android:background="@color/color_bebebe"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line" 
+        android:orientation="vertical">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_employer_current_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+    
+    <!-- <ProgressBar 
+        android:id="@+id/pb_current_ticket_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/> -->
+    
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_current_ticket_progress"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"
+        ></com.yunqi.clientandroid.utils.ProgressWheel>
+    
+    <ImageView 
+        android:id="@+id/iv_current_ticket_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/blank_words"/>
+    <LinearLayout 
+        android:id="@+id/ll_current_ticket_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/space_15"
+            android:text="@string/employer_activity_current_empty"/>
+    </LinearLayout>
+
+</RelativeLayout>

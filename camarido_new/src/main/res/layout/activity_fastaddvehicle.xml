@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff" >
+
+    <LinearLayout
+        android:id="@+id/ll_fastaddvehicle_global"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_surname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_fastaddvehicle_surname"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_30"
+                        android:layout_toRightOf="@id/tv_fastaddvehicle_surname"
+                        android:text="@string/tv_fastaddvehicle_name"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_fastaddvehicle_inputname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:background="@color/color_ffffff"
+                        android:hint="@string/et_namecertification_name"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_fastaddvehicle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_ebebeb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_idcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_fastaddvehicle_idcard"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_fastaddvehicle_inputidcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:background="@color/color_ffffff"
+                        android:hint="@string/et_namecertification_idcard"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_fastaddvehicle_view0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_ebebeb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_carlicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_newvehile_carlicense"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_fastaddvehicle_inputcarlicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:background="@color/color_ffffff"
+                        android:hint="@string/et_newvehile_inputcarlicense"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_fastaddvehicle_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_ebebeb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_cartype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_newvehile_cartype"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_inputcartype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:background="@color/color_ffffff"
+                        android:clickable="true"
+                        android:hint="@string/et_newvehile_inputcartype"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_fastaddvehicle_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_ebebeb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_enginenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_newvehile_enginenumber"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_fastaddvehicle_inputengine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:background="@color/color_ffffff"
+                        android:hint="@string/et_newvehile_inputenginenumber"
+                        android:singleLine="true"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_fastaddvehicle_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_ebebeb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_26" >
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_driverlicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:text="@string/tv_newvehile_driverlicense"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fastaddvehicle_blacklicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_126"
+                        android:text="@string/tv_newvehile_blacklicense"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_88"
+                    android:layout_marginTop="@dimen/space_11" >
+
+                    <ImageView
+                        android:id="@+id/iv_fastaddvehicle_driverlicense"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iv_driverlicense" />
+
+                    <ImageView
+                        android:id="@+id/iv_fastaddvehicle_operatinglicense"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iv_driveroperating" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_11"
+                    android:background="@color/color_f2f2f2" />
+
+                <TextView
+                    android:id="@+id/tv_fastaddvehicle_insuranceimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_11"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:text="@string/tv_newvehicle_insuranceimg"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_fastaddvehicle_insuranceimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_200"
+                    android:layout_marginTop="@dimen/space_10" >
+
+                    <ImageView
+                        android:id="@+id/iv_fastaddvehicle_insuranceimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_11"
+                        android:layout_marginRight="@dimen/space_11"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iv_insuranceimg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_fastaddvehicle_myProssBarhandleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/pb_fastaddvehicle_myProssBarhandle"
+                    style="@style/tallerBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_10"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:visibility="gone" >
+                </ProgressBar>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_100" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_2"
+                android:background="@color/color_f2f2f2" />
+
+            <Button
+                android:id="@+id/bt_fastaddvehicle_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/login_button_selector"
+                android:text="@string/bt_newvehile_apply"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_fastaddvehicle_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+</FrameLayout>

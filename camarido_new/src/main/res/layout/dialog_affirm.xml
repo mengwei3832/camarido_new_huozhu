@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/tv_diaperform_isaffirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_30"
+        android:text="@string/myticket_executiveOrders"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_diaperform_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_diaperform_isaffirm"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_45"
+        android:text="@string/repeat_cancel"
+        android:textColor="@color/color_ff4400"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_diaperform_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_diaperform_isaffirm"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_45"
+        android:text="@string/sure"
+        android:textColor="@color/color_229AEE"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:layout_below="@id/tv_diaperform_confirm" />
+
+</RelativeLayout>

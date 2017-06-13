@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bidding_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/ll_bidding_ppw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_10"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/packdetail_ppw_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_70"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_11"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_bidding_estimateUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/packdetail_estimate"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_estimate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_estimateDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/packdetail_priceType"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_14"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_bidding_hisCountUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/packdetail_hisCount"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_hisCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_hisCountDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/packdetail_single"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_avgPriceUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:text="@string/packdetail_avgPrice"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_avgPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ff4400"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bidding_avgPriceDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/packdetail_priceType"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/iv_bidding_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginRight="@dimen/space_13"
+                android:background="@color/color_e4e4e4" />
+
+            <LinearLayout
+                android:id="@+id/ll_bidding_inputPrice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_41"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_23"
+                    android:gravity="center_vertical"
+                    android:text="@string/packdetail_price"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_bidding_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_weight="1"
+                    android:background="@color/color_ffffff"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/packdetail_pleaseInputPrice"
+                    android:inputType="numberDecimal"
+                    android:paddingRight="@dimen/space_40"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginRight="@dimen/space_13"
+                android:background="@color/color_e4e4e4" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bidding_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_41" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_23"
+                    android:text="@string/myticket_vehicle"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_bidding_VehicleNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/tv_selector_VehicleNoVis" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_centerInParent="true" -->
+                <!-- android:textColor="#ccc" -->
+                <!-- android:textSize="15sp" /> -->
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginRight="@dimen/space_13"
+                android:background="@color/color_e4e4e4" />
+
+            
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_13"
+                android:layout_marginRight="@dimen/space_13"
+                android:background="@color/color_e4e4e4" />
+
+       
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_bidding_determine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginBottom="@dimen/space_13"
+            android:background="@drawable/login_button_selector"
+            android:gravity="center"
+            android:text="@string/packdetail_determineBidding"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_bidding_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_3"
+        android:src="@drawable/packdetail_delete" />
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_to_personal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_200" >
+
+        <com.yunqi.clientandroid.view.RoundImageView
+            android:id="@+id/iv_mine_avatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/space_29"
+            android:layout_marginTop="@dimen/space_13"
+            android:background="@drawable/mine_avatar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_30"
+            android:layout_toRightOf="@id/iv_mine_avatar" >
+
+            <TextView
+                android:id="@+id/tv_mine_nickName"
+                style="@style/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_mine_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_mine_nickName"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_toRightOf="@id/tv_mine_nickName"
+                android:background="@drawable/mine_age_backgroud"
+                android:gravity="center"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_mine_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_mine_nickName"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_toRightOf="@id/tv_mine_age"
+                android:background="@drawable/mine_sex_backgroud"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mine_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_person"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_toRightOf="@id/iv_mine_avatar"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:id="@+id/rl_income"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/mine_income_background"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll_money_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_all_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收入"
+                    android:textSize="@dimen/space_14" />
+
+                <TextView
+                    android:id="@+id/tv_all_income_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:textColor="@color/order_car_status"
+                    android:textSize="@dimen/space_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_money_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_57"
+                android:layout_toRightOf="@id/ll_money_left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_settlement"
+                    style="@style/mine_name_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待结算" />
+
+                <TextView
+                    android:id="@+id/tv_remain"
+                    style="@style/mine_name_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:text="账户余额" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_money_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_28"
+                android:layout_toRightOf="@id/ll_money_middle"
+                android:orientation="vertical"
+                android:textColor="@color/order_car_status" >
+
+                <TextView
+                    android:id="@+id/tv_settlement_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/order_car_status"
+                    android:textSize="@dimen/space_14" />
+
+                <TextView
+                    android:id="@+id/tv_remain_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:textColor="@color/order_car_status"
+                    android:textSize="@dimen/space_14" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_7"
+            android:src="@drawable/mine_my_order" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:text="我的订单"
+            android:textColor="#313131"
+            android:textSize="@dimen/space_18" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rl_order_perform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_background_seletor" >
+
+            <TextView
+                android:id="@+id/tv_order_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <TextView
+                android:id="@+id/tv_order_status_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_order_first"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_20"
+                android:text="待执行"
+                android:textColor="@color/color_808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_current"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_background_seletor" >
+
+            <TextView
+                android:id="@+id/tv_order_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <TextView
+                android:id="@+id/tv_order_status_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_order_second"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_20"
+                android:text="执行中"
+                android:textColor="@color/color_808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_completed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/list_background_seletor" >
+
+            <TextView
+                android:id="@+id/tv_order_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <TextView
+                android:id="@+id/tv_order_status_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_order_third"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_20"
+                android:text="已完成"
+                android:textColor="@color/color_808080" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_15"
+        android:background="@color/mine_gap" />
+
+</LinearLayout>

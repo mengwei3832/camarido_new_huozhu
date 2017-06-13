@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/order_popu_backround"
+    android:gravity="center"
+    android:padding="@dimen/space_8" >
+
+    <LinearLayout style="@style/order_popuwindow" >
+
+        <TextView
+            android:id="@+id/tv_wait_change_ticket"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_change_ticket" />
+
+        <TextView
+            android:id="@+id/tv_wait_shipment"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_shipment" />
+
+        <TextView
+            android:id="@+id/tv_wait_receive"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_receive" />
+
+        <TextView
+            android:id="@+id/tv_wait_check"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_check" />
+        <TextView
+            android:id="@+id/tv_wait_settlement"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_settlement" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            style="@style/employer_popuwindow_text"
+            android:text="@string/wait_all" />
+    </LinearLayout>
+
+</RelativeLayout>

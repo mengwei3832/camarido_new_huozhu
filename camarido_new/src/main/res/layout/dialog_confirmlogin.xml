@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    >
+    
+	<TextView
+	    android:id="@+id/tv_diarep_loginfail" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/repeat_loginfail"
+	    android:textSize="20sp"
+	    android:textColor="@color/color_333333"
+	    android:layout_marginTop="@dimen/space_28"
+	    android:layout_marginLeft="@dimen/space_20"
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/tv_diarep_pwdmsg"
+	    android:layout_below="@id/tv_diarep_loginfail" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/repeat_pwdmsg"
+	    android:textSize="16sp"
+	    android:textColor="@color/color_333333"
+	    android:layout_marginTop="@dimen/space_26"
+	    android:layout_marginLeft="@dimen/space_20"
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/tv_diarep_confirmlogin" 
+	    android:layout_below="@id/tv_diarep_pwdmsg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/repeat_pwd"
+	    android:textSize="16sp"
+	    android:textColor="@color/color_229AEE"
+	    android:layout_marginTop="@dimen/space_32"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="@dimen/space_25"
+	    />
+	
+	
+    <View
+        android:layout_below="@id/tv_diarep_confirmlogin" 
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/space_25"
+        />
+</RelativeLayout>

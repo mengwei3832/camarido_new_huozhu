@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/block_bg"
+        android:drawableEnd="@drawable/jinru"
+        android:drawableRight="@drawable/jinru"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/btn_add_address"
+        android:textColor="#333"
+        android:textSize="14sp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:divider="@drawable/list_view_driver_line"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

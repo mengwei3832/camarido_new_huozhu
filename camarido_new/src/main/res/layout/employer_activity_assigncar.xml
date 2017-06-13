@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/employer_assign_carNumber"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_assign_carNumberAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="23/30"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_40"
+                android:layout_weight="6"
+                android:background="@drawable/tianjiakuang"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_assign_province"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/color_2299EE"
+                    android:drawableRight="@drawable/xiala"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/space_8"
+                    android:text="晋"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/space_14" />
+
+                <EditText
+                    android:id="@+id/et_assign_addCar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/employer_assign_addCar"
+                    android:imeActionLabel="请输入车牌号"
+                    android:imeOptions="actionSearch|actionUnspecified"
+                    android:paddingLeft="@dimen/space_5"
+                    android:singleLine="true"
+                    android:textColorHint="@color/textTitleColor"
+                    android:textSize="@dimen/space_14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_assign_addCar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_40"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_weight="3"
+                android:background="@drawable/employer_assign_addcar_button_selector"
+                android:text="@string/employer_assign_addCar_button"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_assign_carList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/list_view_driver_line" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/bt_assign_zhipai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_2c9ceb"
+            android:text="@string/employer_assign_carNumber"
+            android:textColor="@color/color_ffffff"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_assign_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/blank_words"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_assign_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+    <GridView 
+        android:id="@+id/gv_assign_sheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_7"
+        android:numColumns="7"
+        android:layout_alignParentBottom="true"
+        android:horizontalSpacing="@dimen/space_6"
+        android:verticalSpacing="@dimen/space_6"
+        android:visibility="gone"/>
+    
+
+</RelativeLayout>

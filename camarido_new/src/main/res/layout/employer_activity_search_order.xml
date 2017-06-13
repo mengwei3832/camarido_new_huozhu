@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_new_time"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/block_bg"
+            android:clickable="true"
+            android:paddingEnd="15dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="15dp"
+            android:paddingStart="0dp" >
+
+            <TextView
+                android:id="@+id/tv_car_time"
+                android:layout_width="77dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/tv_car_time"
+                android:textColor="#2299EE"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/v_time_shu"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_car_time"
+                android:layout_toRightOf="@id/tv_car_time"
+                android:background="#D4D4D4" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/v_time_shu"
+                android:layout_toLeftOf="@+id/iv_time"
+                android:layout_toRightOf="@id/v_time_shu"
+                android:layout_toStartOf="@+id/iv_time"
+                android:gravity="center_vertical"
+                android:hint="@string/_tv_car_time"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/qianjin"
+                android:contentDescription="@string/_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/block_bg"
+            android:clickable="true"
+            android:paddingEnd="15dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="15dp"
+            android:paddingStart="0dp" >
+
+            <TextView
+                android:id="@+id/tv_car_numer"
+                android:layout_width="77dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/tv_car_numer"
+                android:textColor="#2299EE"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/v_vehiccle_shu"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_car_numer"
+                android:layout_toRightOf="@+id/tv_car_numer"
+                android:background="#D4D4D4" />
+
+            <EditText
+                android:id="@+id/et_car_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/v_vehiccle_shu"
+                android:layout_toRightOf="@+id/v_vehiccle_shu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/employer_assign_addCar"
+                android:inputType="text"
+                android:focusable="false"
+                android:maxLength="7"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/space_10"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_new_status"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/block_bg"
+            android:clickable="true"
+            android:paddingEnd="15dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="15dp"
+            android:paddingStart="0dp" >
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="77dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/tv_status"
+                android:textColor="#2299EE"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/v_status_shu"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_status"
+                android:layout_toRightOf="@id/tv_status"
+                android:background="#D4D4D4" />
+
+            <TextView
+                android:id="@+id/_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/v_status_shu"
+                android:layout_toLeftOf="@+id/iv_status"
+                android:layout_toRightOf="@id/v_status_shu"
+                android:layout_toStartOf="@+id/iv_status"
+                android:gravity="center_vertical"
+                android:hint="@string/_tv_status"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/qianjin"
+                android:contentDescription="@string/_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_new_jing_ji_ren"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/block_bg"
+            android:clickable="true"
+            android:paddingEnd="15dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="15dp"
+            android:paddingStart="0dp" >
+
+            <TextView
+                android:id="@+id/tv_jing_ji_ren"
+                android:layout_width="77dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/tv_jing_ji_ren"
+                android:textColor="#2299EE"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/v_jing_ji_ren_shu"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_jing_ji_ren"
+                android:layout_toRightOf="@id/tv_jing_ji_ren"
+                android:background="#D4D4D4" />
+
+            <TextView
+                android:id="@+id/_tv_jing_ji_ren"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/v_jing_ji_ren_shu"
+                android:layout_toLeftOf="@+id/iv_jing_ji_ren"
+                android:layout_toRightOf="@id/v_jing_ji_ren_shu"
+                android:layout_toStartOf="@+id/iv_jing_ji_ren"
+                android:gravity="center_vertical"
+                android:hint="@string/_tv_jing_ji_ren"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_jing_ji_ren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/qianjin"
+                android:contentDescription="@string/_image" />
+        </RelativeLayout>
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"/>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancle"
+                android:text="@string/repeat_cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/blu"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1" />
+			<View 
+			    android:layout_width="10dp"
+			    android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_search"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="@string/discover_search"
+                android:background="@drawable/org"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

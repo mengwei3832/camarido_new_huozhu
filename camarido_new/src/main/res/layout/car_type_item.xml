@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability= "blocksDescendants">
+    
+	<CheckBox 
+	    android:layout_marginLeft="118dp"
+	    android:clickable="false"
+	    android:focusable="false"
+	    android:layout_centerVertical="true"
+	    android:button="@drawable/cb_send_package_bg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/cb_car_type"/>
+	<TextView 
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/cb_car_type"
+	    android:id="@+id/tv_car_type"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>
+</RelativeLayout>

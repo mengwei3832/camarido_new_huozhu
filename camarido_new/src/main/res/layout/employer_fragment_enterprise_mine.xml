@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_company_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.yunqi.clientandroid.view.RoundImageView
+                android:id="@+id/iv_enterprise_mine_avatar"
+                android:layout_width="@dimen/space_92"
+                android:layout_height="@dimen/space_92"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_22"
+                android:background="@drawable/company_person_header" />
+
+            <TextView
+                android:id="@+id/tv_enterprise_mine_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_enterprise_mine_avatar"
+                android:layout_marginTop="@dimen/space_15"
+                android:textColor="@color/color_333333"
+                android:textSize="20sp" />
+
+            <!-- <TextView
+                android:id="@+id/tv_enterprise_mine_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_enterprise_mine_nickName"
+                android:layout_centerHorizontal="true"
+                android:text="yangasfskfslkfj"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" /> -->
+            <!-- head -->
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/space_23"
+                android:layout_below="@+id/tv_enterprise_mine_nickName"
+                android:background="@drawable/block_bg"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_enterprise_mine_wallet_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/employer_enterprise_wallet" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/mine_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_wall"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/view_enterprise_mine_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tv_enterprise_mine_item1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ccc" />
+            </RelativeLayout>
+            <!-- 1 -->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_car"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_enterprise_mine_wallet"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/mine_arrow" />
+
+                <TextView
+                    android:id="@+id/iv_enterprise_mine_car_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_car"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view_enterprise_mine_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/iv_enterprise_mine_car_image"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ccc" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/employer_enterprise_car" />
+            </RelativeLayout>
+            <!-- 2 -->
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_enterprise_mine_car"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_enterprise_mine_address_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/dizhi" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/mine_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_address"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <!-- 3 -->
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_enterprise_mine_address"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/block_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_enterprise_mine_help_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/employer_enterprise_help" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/mine_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_bangzhu"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view_enterprise_mine_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tv_enterprise_mine_item4"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ccc" />
+            </RelativeLayout>
+
+            <!-- 4 -->
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_service"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_enterprise_mine_help"
+                android:background="@drawable/block_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_enterprise_mine_service_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/employer_enterprise_service" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_kefu"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:layout_toRightOf="@+id/tv_enterprise_mine_item5"
+                    android:textColor="#999"
+                    android:textSize="18sp" />
+                <View
+                    android:id="@+id/view_enterprise_mine_line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tv_enterprise_mine_item5"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ccc" />
+            </RelativeLayout>
+
+            <!-- 5 -->
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_province"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_enterprise_mine_service"
+                android:background="@drawable/block_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_enterprise_mine_service_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/update_address" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_item6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="84dp"
+                    android:text="@string/employer_company_item_province_update"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_enterprise_mine_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:layout_toRightOf="@+id/tv_enterprise_mine_item6"
+                    android:textColor="#999"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            
+            <!-- 退出登录 -->
+            <RelativeLayout 
+                android:clickable="true"
+                android:id="@+id/rl_enterprise_mine_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/block_bg"
+                android:layout_below="@+id/rl_enterprise_mine_province">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp"
+                    android:text="@string/employer_company_item_back"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_employer_company"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"
+        ></com.yunqi.clientandroid.utils.ProgressWheel>
+
+</RelativeLayout>

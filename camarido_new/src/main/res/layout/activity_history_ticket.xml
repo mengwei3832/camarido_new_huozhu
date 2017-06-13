@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_3"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_weight="1"
+            android:background="@drawable/history_screening_search_bg"
+            android:orientation="horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoTv_history_inputTicket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/myticket_searchTicketNum"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_D8D8D8"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_history_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/space_10"
+                android:src="@drawable/history_screening_search" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ib_history_screening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space_13"
+            android:src="@drawable/history_screening_black" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_history_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_229AEE" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/historyticket_refreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_F9F9F9" />
+
+        <ProgressBar
+            android:id="@+id/pb_historyticket_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/fl_historyticket_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blank_words"
+            android:visibility="gone" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

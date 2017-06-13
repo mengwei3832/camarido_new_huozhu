@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/employer_activity_remark_zhuang"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_35"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_f1f1f1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5" >
+
+                <EditText
+                    android:maxLength="6"
+                    android:layout_toLeftOf="@+id/tv_zhaung"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_remark_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/employer_activity_remark_zhuang_input"
+                    android:paddingLeft="@dimen/space_10"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_zhaung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:text="@string/employer_activity_remark_yuan"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_f1f1f1"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/employer_activity_remark_xie"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_35"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_f1f1f1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5" >
+
+                <EditText
+                    android:maxLength="6"
+                    android:layout_toLeftOf="@+id/tv_xie"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_remark_unloading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/employer_activity_remark_xie_input"
+                    android:paddingLeft="@dimen/space_10"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_xie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:text="@string/employer_activity_remark_yuan"
+                    android:textColor="@color/color_2299EE"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_4"
+            android:background="@color/color_f1f1f1"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_140"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_19"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_2299EE"
+                    android:text="@string/employer_activity_remark_xu"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_19"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_2299EE"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="@string/employer_activity_remark_qiu"/>
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="@dimen/space_126"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_f1f1f1" />
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_weight="7.5"
+                android:layout_height="match_parent">
+                <EditText 
+                    android:id="@+id/et_remark_demand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:maxLength="50"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/space_10"
+                    android:gravity="start|top"
+                    android:paddingTop="@dimen/space_19"
+                    android:hint="@string/employer_activity_remark_input"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+	<Button 
+	    android:id="@+id/bt_remark_finish"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="@dimen/space_10"
+	    android:layout_alignParentBottom="true"
+	    android:textColor="@color/color_ffffff"
+	    android:background="@drawable/bt_cartype"
+	    android:text="@string/employer_activity_finish"/>
+</RelativeLayout>

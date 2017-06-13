@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_ffffff"
+    android:layout_height="@dimen/space_55" >
+    <View 
+        android:id="@+id/view"
+        android:layout_width="@dimen/space_1"
+        android:layout_height="@dimen/space_45"
+        android:layout_centerVertical="true"
+        android:background="@color/color_f1f1f1"/>
+    <RadioButton 
+        android:id="@+id/rb_goods_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/view"
+        android:clickable="false"
+        android:focusable="false"
+        android:checked="false"
+        android:background="@drawable/employer_activity_goods_item_selector"
+        android:button="@null"
+        android:layout_marginLeft="@dimen/space_10"/>
+    <TextView 
+        android:id="@+id/tv_goods_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_toRightOf="@+id/rb_goods_message"
+        android:textColor="@color/color_333333"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f1f1f1"/>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_selvehicle_parent_enterprise_mine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ppw_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_188"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mine_personal_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_42"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_enterprise_personal_cancle_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_30"
+                android:text="@string/repeat_cancel"
+                android:textColor="@color/color_ff4400"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_enterprise_personal_sure_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_30"
+                android:text="@string/sure"
+                android:textColor="@color/color_229AEE"
+                android:textSize="@dimen/space_16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_e4e4e4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_enterprise_personal_nickname_mine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_41"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_enterprise_personal_nickName_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_48"
+                android:text="@string/enterprise_personal_nickmsg"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_enterprise_personal_nickName_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_enterprise_personal_nickName_mine"
+                android:layout_alignBottom="@+id/tv_enterprise_personal_nickName_mine"
+                android:layout_toRightOf="@+id/tv_enterprise_personal_nickName_mine"
+                android:background="@color/color_ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/enterprise_personal_et_nick"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@color/color_e4e4e4" />
+
+        <RelativeLayout
+            android:id="@+id/rv_enterprise_personal_message_mine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_41" >
+
+            <TextView
+                android:id="@+id/tv_enterprise_personal_nickmessage_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_48"
+                android:text="@string/enterprise_personal_message"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_enterprise_personal_message_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_enterprise_personal_nickmessage_mine"
+                android:layout_alignBottom="@+id/tv_enterprise_personal_nickmessage_mine"
+                android:layout_toRightOf="@+id/tv_enterprise_personal_nickmessage_mine"
+                android:background="@color/color_ffffff"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/enterprise_personal_et_message"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

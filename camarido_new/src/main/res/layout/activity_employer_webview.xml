@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_employer_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/wv_progress"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        app:matProg_barColor="@color/color_00bbff"
+        app:matProg_progressIndeterminate="true"/>
+</RelativeLayout>

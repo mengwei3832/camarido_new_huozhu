@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/appDefaultBackground"
+              android:orientation="vertical">
+
+
+    <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="#a2a2a2"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioGroup
+                android:id="@+id/rg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appDefaultSingleBlockBackground"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingTop="@dimen/space_5">
+
+            <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/main_item_home_selector"
+                    android:text="@string/main_home"/>
+
+            <RadioButton
+                    android:id="@+id/rb_order"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/main_item_grab_order_selector"
+                    android:text="@string/main_order"/>
+
+            <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <RadioButton
+                        android:id="@+id/rb_discover"
+                        style="@style/RadioButtonStyle"
+                        android:drawableTop="@drawable/main_item_discovery_selector"
+                        android:text="@string/main_discovery"/>
+                <!--<ImageView-->
+                        <!--android:id="@+id/iv_red"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/discover_red_point"-->
+                        <!--/>-->
+            <!--</RelativeLayout>-->
+            <RadioButton
+                    android:id="@+id/rb_mine"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/main_item_mine_selector"
+                    android:text="@string/main_mine"/>
+
+        </RadioGroup>
+        <ImageView
+                android:id="@+id/iv_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/discover_red_point"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_110"
+                android:layout_marginTop="@dimen/space_5"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

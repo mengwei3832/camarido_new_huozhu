@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/wallet_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_35"
+            android:text="@string/wallet_balance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15" />
+
+        <com.yunqi.clientandroid.view.RiseNumberTextView
+            android:id="@+id/tv_wallet_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_35" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_35"
+            android:text="@string/wallet_freeze"
+            android:textColor="@color/wallet_freeze"
+            android:textSize="@dimen/space_12" />
+
+        <TextView
+            android:id="@+id/tv_freeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_18"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_18"
+            android:src="@drawable/wallet_avtar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_weight="1"
+                android:text="@string/wallet_unfinished_shipment"
+                android:textColor="@color/wallet_income"
+                android:textSize="@dimen/space_18" />
+
+            <TextView
+                android:id="@+id/tv_wait_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_marginTop="@dimen/space_30"
+                android:layout_weight="1"
+                android:textColor="@color/order_status"
+                android:textSize="@dimen/space_26" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_16"
+            android:src="@drawable/wallet_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_weight="1"
+                android:text="@string/wallet_all_in"
+                android:textColor="@color/wallet_income"
+                android:textSize="@dimen/space_18" />
+
+            <TextView
+                android:id="@+id/tv_all_income_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_marginTop="@dimen/space_30"
+                android:layout_weight="1"
+                android:textColor="@color/order_status"
+                android:textSize="@dimen/space_26" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#e4e4e4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/beijing"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_10"
+                android:drawablePadding="@dimen/space_15"
+                android:drawableTop="@drawable/tixian"
+                android:text="@string/wallet_withdraw"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="@dimen/space_21" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/beijing"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_6"
+                android:drawablePadding="@dimen/space_15"
+                android:drawableTop="@drawable/mingxi"
+                android:text="@string/wallet_detail"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="@dimen/space_21" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_promotion_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:textColor="@color/attention_first_text_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_promotion_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_25"
+                android:background="@drawable/tuiguangma"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_30"
+                    android:text="@string/my_promotion_code"
+                    android:visibility="gone"
+                    android:textColor="@color/attention_first_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_promotion_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_90"
+                    android:textColor="@color/attention_first_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_active_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_code"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_35"
+                android:text="@string/my_promotion_active_rule"
+                android:textColor="@color/attention_first_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_active_rule"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/mine_recommend_award_pop1"
+                android:textColor="#333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_3"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/mine_recommend_award_pop2"
+                android:textColor="#333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_4"
+                android:layout_marginLeft="@dimen/space_38"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/mine_recommend_award_pop3"
+                android:textColor="#333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_6"
+                android:layout_marginLeft="@dimen/space_38"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/mine_recommend_award_pop4"
+                android:textColor="#333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_7"
+                android:layout_marginLeft="@dimen/space_38"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/mine_recommend_award_pop5"
+                android:textColor="#333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_active_rule_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_active_rule"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/attention_first_text_color"
+                android:visibility="gone"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:layout_below="@id/tv_active_rule_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_60"
+                android:background="@drawable/login_button_selector"
+                android:text="@string/now_promotion"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+    
+
+</RelativeLayout>

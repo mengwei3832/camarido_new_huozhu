@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_myticket_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rg_myticket_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_myticket_perform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/carlist_basic_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/myticket_perform"
+                android:textColor="@drawable/carlist_reserve_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_myticket_current"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/carlist_basic_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/myticket_current"
+                android:textColor="@drawable/carlist_reserve_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_myticket_settlement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/carlist_basic_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/myticket_settlement"
+                android:textColor="@drawable/carlist_reserve_selector"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_myticket_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

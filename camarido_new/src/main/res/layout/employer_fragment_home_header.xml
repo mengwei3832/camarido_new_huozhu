@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_162" >
+
+        <com.yunqi.clientandroid.view.ViewPagerExpand
+            android:id="@+id/vp_employer_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.yunqi.clientandroid.view.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/employer_indicator"
+        CircleIndicator:ci_background="#999966"
+        CircleIndicator:ci_selected_background="#FF0000"
+        CircleIndicator:ci_mode="outside"
+        CircleIndicator:ci_gravity="center"
+        CircleIndicator:ci_radius="3dp"
+        CircleIndicator:ci_margin="5dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/iv_employer_lanse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_21"
+            android:layout_marginLeft="@dimen/space_10"
+            android:src="@drawable/lanshu"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_employer_lanse"
+            android:layout_alignTop="@+id/iv_employer_lanse"
+            android:layout_alignBottom="@+id/iv_employer_lanse"
+            android:textColor="@color/color_666666"
+            android:text="@string/employer_home_heard"
+            android:layout_marginLeft="@dimen/space_5"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:layout_marginTop="@dimen/space_20">
+        <ImageView 
+            android:id="@+id/iv_employer_header_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jianbian"/>
+        <ListView 
+            android:id="@+id/lv_employer_header_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_below="@+id/iv_employer_header_line"/>
+        <ImageView 
+            android:id="@+id/iv_employer_foot_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_employer_header_new"
+            android:src="@drawable/jianbian"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_backound"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/et_employer_search"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/chazhao"
+                android:gravity="center"
+                android:hint="@string/discover_search"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch|actionUnspecified"
+                android:singleLine="true"
+                android:textColorHint="@color/textTitleColor"
+                android:textSize="@dimen/space_18" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_employer_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_weight="2"
+            android:background="@drawable/employer_discover_anjian_search_selector"
+            android:text="@string/discover_search"
+            android:textColor="@color/color_ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_employer_discover_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_background_seletor"
+                android:drawableTop="@drawable/discover_msg"
+                android:gravity="center"
+                android:text="@string/discover_msg"
+                android:textColor="@color/order_detail"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:id="@+id/tv_employer_discover_msg_bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/discover_number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_employer_discover_active"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_background_seletor"
+                android:drawableTop="@drawable/discover_active"
+                android:gravity="center"
+                android:paddingTop="@dimen/space_5"
+                android:text="@string/discover_active"
+                android:textColor="@color/order_detail"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:id="@+id/tv_employer_discover_active_bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/discover_number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:background="@color/order_backound" />
+	<ListView 
+	    android:id="@+id/lv_employer_discover_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:divider="@color/color_f1f1f1"
+	    android:dividerHeight="@dimen/space_1"
+	    android:visibility="gone"
+	    ></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_dixcover_dongtai_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:visibility="visible"
+        android:background="@drawable/list_background_seletor" >
+
+        <ImageView
+            android:id="@+id/iv_dixcover_dongtai_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_20"
+            android:src="@drawable/zixun" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@drawable/mine_arrow" />
+
+        <TextView
+            android:id="@+id/tv_dixcover_dongtai_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="84dp"
+            android:text="@string/employer_discover_item_zixun"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_employer_discover_jiage_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_25"
+            android:visibility="gone"
+            android:src="@drawable/discover_red_point" />
+    </RelativeLayout>
+
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/space_1"
+	    android:visibility="visible"
+	    android:background="@color/color_f1f1f1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dixcover_xinwen_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:visibility="visible"
+        android:background="@drawable/list_background_seletor" >
+
+        <ImageView
+            android:id="@+id/iv_dixcover_xinwen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_20"
+            android:src="@drawable/xinwen" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@drawable/mine_arrow" />
+
+        <TextView
+            android:id="@+id/tv_dixcover_xinwen_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="84dp"
+            android:text="@string/employer_discover_item_xinwen"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_employer_discover_zixun_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_25"
+            android:visibility="gone"
+            android:src="@drawable/discover_red_point" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:visibility="visible"
+        android:background="@color/color_f1f1f1"/>
+</LinearLayout>

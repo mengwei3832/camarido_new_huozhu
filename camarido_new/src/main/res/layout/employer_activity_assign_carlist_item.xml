@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_40"
+    android:gravity="center_vertical" >
+    <TextView 
+        android:id="@+id/tv_assign_carPai"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:text="京A12345"
+        android:textColor="@color/color_666666"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="14sp"/>
+    <TextView 
+        android:id="@+id/tv_assign_carName"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="王轩"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp"/>
+    <TextView 
+        android:id="@+id/tv_assign_carNumber"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="18次"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp"/>
+    <CheckBox 
+        android:id="@+id/cb_assign_carCheck"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="@string/employer_assign_carZhipai"
+        android:textColor="@color/color_666666"
+        android:clickable="false"  
+        android:focusable="false"  
+        android:focusableInTouchMode="false"
+        android:button="@drawable/employer_assign_addcar_listitem_selector"
+        android:textSize="16sp"/>
+
+</LinearLayout>

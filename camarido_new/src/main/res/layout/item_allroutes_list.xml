@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical" 
+    android:background="#f9f9f9"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+  		android:layout_marginRight="10dp"
+  		android:background="@drawable/allroutes_listbg"
+        >
+        
+     <LinearLayout
+         android:id="@+id/ll_routes_start"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+		 android:layout_marginLeft="15dp"
+		 android:orientation="vertical"
+		 android:background="#229AEE"
+		 android:gravity="center"
+		 android:layout_centerVertical="true"
+         >
+         
+      <TextView 
+          android:id="@+id/tv_routes_startabove"
+          android:layout_height="wrap_content"
+          android:layout_width="45dp"
+          android:ellipsize="none"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:textColor="#fff"
+          android:gravity="center"
+          />
+         
+      <TextView
+          android:id="@+id/tv_routes_startfollow"
+          android:layout_height="wrap_content"
+		  android:layout_width="45dp"
+          android:ellipsize="none"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:textColor="#fff"
+          android:gravity="center"
+          />   
+         
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:layout_width="159dp"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:gravity="center"
+         android:layout_gravity="center_vertical"
+         android:layout_centerInParent="true"
+         >
+      
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+         <TextView 
+             android:id="@+id/tv_routes_package"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             />  
+         <TextView 
+             android:id="@+id/tv_routes_order"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:textColor="#333333"
+             />  
+           
+       </LinearLayout>  
+        
+       <ImageView 
+           android:layout_width="159dp"
+           android:layout_height="24dp"
+           android:background="@drawable/routes_arrow"
+           />
+       
+       <TextView
+           android:id="@+id/tv_routes_distance"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="#333333"
+           />
+         
+     </LinearLayout>
+     
+     
+     <LinearLayout
+     android:id="@+id/ll_routes_end"
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:layout_alignParentRight="true"
+	 android:layout_marginRight="15dp"
+	 android:orientation="vertical"
+	 android:background="#229AEE"
+	 android:gravity="center"
+	 android:layout_centerVertical="true"
+        >
+        
+     <TextView
+         android:id="@+id/tv_routes_endabove"
+         android:layout_height="wrap_content"
+		 android:layout_width="45dp"
+         android:ellipsize="none"
+         android:singleLine="true"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:gravity="center"
+         />   
+     <TextView
+         android:id="@+id/tv_routes_endfollow"
+         android:layout_height="wrap_content"
+		 android:layout_width="45dp"
+         android:ellipsize="none"
+         android:singleLine="true"
+         android:textSize="15sp"
+         android:textColor="#fff"
+         android:gravity="center"
+         />   
+        
+    </LinearLayout>
+    
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

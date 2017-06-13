@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_order_type"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <RadioButton
+            android:id="@+id/rb_first"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/space_5"
+              android:text="@string/order_tender"
+              android:button="@null"
+              android:textColor="@color/order_from_color"
+              android:textSize="@dimen/space_15"
+              android:gravity="center"
+              android:background="@drawable/order_check_background"
+            />
+    <RadioButton
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/space_13"
+              android:text="@string/order_one_tender"
+              android:button="@null"
+              android:textColor="@color/order_from_color"
+              android:textSize="@dimen/space_15"
+              android:gravity="center"
+              android:background="@drawable/order_check_background"
+            />
+    <RadioButton android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/space_13"
+              android:text="@string/order_one_tender"
+              android:button="@null"
+              android:textColor="@color/order_from_color"
+              android:textSize="@dimen/space_15"
+              android:gravity="center"
+              android:background="@drawable/order_check_background"
+            />
+</RadioGroup>

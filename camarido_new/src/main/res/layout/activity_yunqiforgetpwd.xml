@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9" >
+
+    <RelativeLayout
+        android:id="@+id/rl_codelogin_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:id="@+id/et_codelogin_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/register_phone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_20"
+            android:maxLength="11"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_codelogin_delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_codelogin_verificationcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_codelogin_phone"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_codelogin_verificationcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_20"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/verification"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_20"
+            android:maxLength="8"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <Button
+            android:id="@+id/bt_codelogin_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/register_button_selector"
+            android:text="@string/codelogin_bt_validation"
+            android:textColor="@drawable/verification_textcolor_selector"
+            android:textSize="18sp" 
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_codelogin_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_codelogin_verificationcode"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:id="@+id/et_codelogin_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/register_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/space_20"
+            android:maxLength="16"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_codelogin_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_codelogin_agreed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@id/rl_codelogin_pwd"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/codelogin_bt_login"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

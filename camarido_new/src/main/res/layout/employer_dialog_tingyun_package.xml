@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_196"
+        android:background="@drawable/package_tingyun_popup_window_bg"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingTop="@dimen/space_30"
+            android:paddingRight="@dimen/space_30"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_stop_t2" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/employer_dialog_tingyun_t1"
+                android:textColor="@color/color_00bbff"
+                android:textSize="18sp"/>
+            <TextView 
+                android:id="@+id/tv_stop_t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_15"
+                android:text="@string/employer_dialog_tingyun_t2"
+                android:textColor="@color/color_00bbff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <RelativeLayout 
+                android:id="@+id/rl_package_tingyun_cancle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/btn_cancle"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_00bbff"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/package_tingyun_btn_background_gray"/>
+            </RelativeLayout>
+            <RelativeLayout 
+                android:id="@+id/rl_package_tingyun_sure"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sure"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_ffffff"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/package_tingyun_btn_background_blue"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

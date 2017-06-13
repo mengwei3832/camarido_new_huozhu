@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_myinfo_changebirth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000" >
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changebirth_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_5" >
+
+            <TextView
+                android:id="@+id/btn_myinfo_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_30"
+                android:layout_marginLeft="@dimen/space_15"
+                android:background="@null"
+                android:text="@string/no"
+                android:textColor="@color/color_ff4400"
+                android:textSize="@dimen/space_16" />
+
+            <TextView
+                android:id="@+id/btn_myinfo_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_30"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@null"
+                android:text="@string/sure"
+                android:textColor="@color/color_229AEE"
+                android:textSize="@dimen/space_16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_160"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.yunqi.clientandroid.view.wheel.views.WheelView
+                android:id="@+id/wv_birth_year"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.yunqi.clientandroid.view.wheel.views.WheelView
+                android:id="@+id/wv_birth_month"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.yunqi.clientandroid.view.wheel.views.WheelView
+                android:id="@+id/wv_birth_day"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

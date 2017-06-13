@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_eeeeee"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/external_input_phone">
+        <RelativeLayout
+            android:id="@+id/rl_item_external_delete"
+            android:layout_width="@dimen/space_44"
+            android:layout_height="match_parent"
+            android:background="@color/color_f6f6f6">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/delete_phone"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_item_external_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_item_external_delete"
+            android:layout_marginLeft="@dimen/space_10"
+            android:text="13245675432"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/bt_item_external_duanxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/space_8"
+            android:background="@drawable/external_add_phone"
+            android:text="@string/employer_activity_external_item_duanxin"
+            android:textColor="@color/color_ffffff"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</LinearLayout>

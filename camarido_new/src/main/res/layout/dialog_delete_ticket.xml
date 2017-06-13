@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/tv_ticketdetail_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_30"
+        android:text="@string/myticket_nolonger_perform"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_ticketdetail_memo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"
+        android:layout_below="@id/tv_ticketdetail_msg"
+        android:layout_marginLeft="@dimen/space_30"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_ticketdetail_memo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_weight="1"
+            android:background="@drawable/login_biankuang"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="@string/myticket_cancle_reason"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b5b5b5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ticketdetail_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_ticketdetail_memo"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_25"
+        android:text="@string/repeat_cancel"
+        android:textColor="@color/color_ff4400"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_ticketdetail_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_ticketdetail_memo"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_25"
+        android:text="@string/myticket_nolonger_ticket"
+        android:textColor="@color/color_229AEE"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:layout_below="@id/tv_ticketdetail_confirm" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_110"
+    android:background="@color/color_ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_uploadAgain"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_80"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_13" >
+
+        <ImageView
+            android:id="@+id/iv_mofidy_showPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/modify_backgroud" />
+
+        <ImageView
+            android:id="@+id/iv_modify_uploadagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_modify_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_toRightOf="@id/rl_modify_uploadAgain"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modify_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_modify_tickcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_modify_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_modify_documents"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toRightOf="@id/rl_modify_uploadAgain"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modify_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="吨    数"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_modify_weightCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_modify_createTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rl_modify_uploadAgain"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_15"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"
+        android:layout_below="@id/tv_modify_createTime"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/color_ebebeb" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_popupwindows_attorneymsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="请上传授权书"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_38"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_attorneyphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="@string/item_popupwindows_driverphoto"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_38"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_attorneyselect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="@string/item_popupwindows_driverselect"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_38"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_attorneycancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:gravity="center"
+                android:text="@string/item_popupwindows_drivercancel"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_999999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_21"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appDefaultBackground"
+    android:orientation="vertical" >
+    <FrameLayout
+            android:id="@+id/fl_employer_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="#a2a2a2"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioGroup
+                android:id="@+id/rg_employer_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appDefaultSingleBlockBackground"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingTop="@dimen/space_5">
+
+            <RadioButton
+                    android:id="@+id/rb_employer_home"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/employer_main_item_home_selector"
+                    android:text="@string/employer_activity_main_shouye"/>
+
+            <RadioButton
+                    android:id="@+id/rb_employer_order"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/employer_main_item_fabao_selector"
+                    android:text="@string/employer_activity_main_dingdan"/>
+
+            <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <RadioButton
+                        android:id="@+id/rb_employer_discover"
+                        style="@style/RadioButtonStyle"
+                        android:drawableTop="@drawable/employer_main_item_discovery_selector"
+                        android:text="@string/employer_activity_main_faxian"/>
+                <!--<ImageView-->
+                        <!--android:id="@+id/iv_red"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/discover_red_point"-->
+                        <!--/>-->
+            <!--</RelativeLayout>-->
+            <RadioButton
+                    android:id="@+id/rb_employer_mine"
+                    style="@style/RadioButtonStyle"
+                    android:drawableTop="@drawable/employer_main_item_company_selector"
+                    android:text="@string/employer_activity_main_gonglu"/>
+
+        </RadioGroup>
+        <ImageView
+                android:id="@+id/iv_employer_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/discover_red_point"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_110"
+                android:layout_marginTop="@dimen/space_5"
+                />
+        <ImageView
+            android:id="@+id/iv_employer_red_zixun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/discover_red_point"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_110"
+            android:layout_marginTop="@dimen/space_5"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

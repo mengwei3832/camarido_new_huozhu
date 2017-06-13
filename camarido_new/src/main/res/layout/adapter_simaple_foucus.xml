@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/allroutes_listbg" >
+
+            <LinearLayout
+                android:id="@+id/ll_simaple_foucus_start"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_15"
+                android:background="@color/color_229AEE"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_simaple_foucus_start_province"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_simaple_foucus_start_city"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/simaple_foucusmiddle"
+                android:layout_width="@dimen/space_115"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_toRightOf="@id/ll_simaple_foucus_start"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/space_115"
+                    android:layout_height="@dimen/space_24"
+                    android:background="@drawable/packagelist_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_simaple_foucus_end"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/simaple_foucusmiddle"
+                android:background="@color/color_229AEE"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_simaple_foucus_end_province"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_simaple_foucus_end_city"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ib_simaple_foucus_packagelist_focuson"
+                android:layout_width="@dimen/space_38"
+                android:layout_height="@dimen/space_38"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@drawable/packagelist_focuson"
+                android:clickable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

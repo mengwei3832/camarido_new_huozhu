@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/bt_ticket_detail_vehicleContacts"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="@string/employer_activity_ticket_detail_genche"
+        android:textColor="@color/color_ffffff"
+        android:background="@color/color_ff4400"
+        android:layout_marginBottom="2dp"/>
+    <Button 
+        android:id="@+id/bt_ticket_detail_userphone"
+        android:layout_width="126dp"
+        android:textColor="@color/color_ffffff"
+        android:layout_height="wrap_content"
+        android:text="@string/employer_activity_ticket_detail_zhixingren"
+        android:background="@color/color_ff4400"
+        android:layout_marginBottom="2dp"/>
+
+</LinearLayout>

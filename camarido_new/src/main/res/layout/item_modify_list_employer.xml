@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_110"
+    android:background="@color/color_ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_uploadAgain_employer"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_80"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_13" >
+
+        <ImageView
+            android:id="@+id/iv_mofidy_showPhoto_employer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/modify_backgroud" />
+
+        <ImageView
+            android:id="@+id/iv_modify_uploadagain_employer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_modify_documents_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toRightOf="@id/rl_modify_uploadAgain_employer"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modify_documents_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/employer_ticket_modify_caozuoren"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_modify_tickcode_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_modify_weight_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_modify_documents_employer"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toRightOf="@id/rl_modify_uploadAgain_employer"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modify_weight_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/employer_ticket_modify_dunshu"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_modify_weightCount_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_modify_weight_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_modify_weight_employer"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toRightOf="@id/rl_modify_uploadAgain_employer"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modify_weight_caozuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/employer_ticket_modify_caozuo"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_modify_createTime_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_modify_shen_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_80"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_19"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_modify_shenhe_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="@dimen/space_30"
+            android:background="@drawable/btn_shenhe"/>
+        <TextView 
+            android:id="@+id/tv_modify_bohui_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="@drawable/btn_bohui"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_modify_bo_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_80"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_modify_bo_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="@dimen/space_30"
+            android:textColor="@color/color_2299EE"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="@string/employer_ticket_modify_mohui"
+            android:background="@drawable/kuang_shen"/>
+        <TextView 
+            android:id="@+id/tv_modify_bosname_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_horizontal"
+            android:text="@string/employer_ticket_modify_bohuiren"/>
+        
+        <TextView 
+            android:id="@+id/tv_modify_boname_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/space_5"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_modify_jie_employer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_80"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_modify_yishenhe_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="@dimen/space_30"
+            android:textColor="@color/color_2299EE"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="@string/employer_ticket_modify_yishenhe"
+            android:background="@drawable/kuang_shen"/>
+        <TextView 
+            android:id="@+id/tv_modify_sname_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_horizontal"
+            android:text="@string/employer_ticket_modify_shenheren"/>
+        
+        <TextView 
+            android:id="@+id/tv_modify_name_employer"
+            android:layout_width="@dimen/space_55"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/space_5"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_2"
+        android:layout_below="@id/rl_modify_uploadAgain_employer"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/color_ebebeb" />
+
+</RelativeLayout>

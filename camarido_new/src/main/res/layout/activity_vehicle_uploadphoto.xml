@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_vehicleupload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_250"
+        android:scaleType="fitXY" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginLeft="@dimen/space_20"
+        android:textSize="18sp"
+        android:textColor="@color/color_ff0000"
+        android:text="@string/vehicle_changePhoto_error" />
+
+    <TextView
+        android:id="@+id/tv_vehicleupload_myProssBarhandleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_vehicleupload_myProssBarhandle"
+        style="@style/tallerBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_10"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_5"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/btn_vehicleupload_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_150"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/vehicle_changePhoto"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_vehicleupload_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/tv_drivermsg_save"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

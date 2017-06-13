@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_eeeeee" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_44"
+        android:orientation="horizontal"
+        android:background="@drawable/quote_yijia_item"
+        android:layout_margin="@dimen/space_10">
+        <TextView 
+            android:id="@+id/tv_item_yijia_date"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2016.09.22"
+            android:textColor="@color/color_303030"
+            android:textSize="13sp"/>
+        <TextView 
+            android:id="@+id/tv_item_yijia_person"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="经纪人"
+            android:textColor="@color/color_303030"
+            android:textSize="13sp"/>
+        <TextView 
+            android:id="@+id/tv_item_yijia_price"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="100.00元/吨"
+            android:textColor="@color/color_303030"
+            android:textSize="13sp"/>
+        <TextView 
+            android:id="@+id/tv_item_yijia_success"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="成功协商价格"
+            android:textColor="@color/color_22bb22"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

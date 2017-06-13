@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_20"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_company_register_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_company_name"
+                android:layout_marginRight="@dimen/space_17"
+                android:layout_marginTop="@dimen/space_10"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_company_register_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_company_register_time"
+                android:layout_marginLeft="@dimen/space_50"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_register_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_register_money"
+                android:layout_below="@+id/tv_company_register_money"
+                android:layout_marginTop="@dimen/space_13"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_register_money"
+                android:layout_below="@+id/tv_company_register_address"
+                android:layout_marginTop="@dimen/space_15"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_company_date_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_below="@+id/tv_company_explain"
+                android:layout_marginTop="@dimen/space_17"
+                android:background="#f9f9f9"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:gravity="center_vertical"
+                    android:text="@string/company_date_statistics"
+                    android:textColor="#333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_company_contract_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_company_date_statistics"
+                android:layout_marginLeft="@dimen/space_50"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/company_contract_sum"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_contract_sum_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_company_date_statistics"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_toRightOf="@+id/tv_company_contract_sum"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_company_contract_sum"
+                android:layout_below="@+id/tv_company_contract_sum"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/company_waybill_sum"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_sum_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_contract_sum_input"
+                android:layout_below="@+id/tv_company_contract_sum_input"
+                android:layout_marginTop="@dimen/space_10"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_pay_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_company_contract_sum"
+                android:layout_below="@+id/tv_company_waybill_sum"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/company_pay_sum"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_pay_sum_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_contract_sum_input"
+                android:layout_below="@+id/tv_company_waybill_sum_input"
+                android:layout_marginTop="@dimen/space_10"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_finish_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_company_contract_sum"
+                android:layout_below="@+id/tv_company_pay_sum"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/company_waybill_finish_sum"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_finish_sum_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_contract_sum_input"
+                android:layout_below="@+id/tv_company_pay_sum_input"
+                android:layout_marginTop="@dimen/space_10"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_running_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_company_contract_sum"
+                android:layout_below="@+id/tv_company_waybill_finish_sum"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/company_waybill_running_sum"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_company_waybill_running_sum_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_company_contract_sum_input"
+                android:layout_below="@+id/tv_company_waybill_finish_sum_input"
+                android:layout_marginTop="@dimen/space_10"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_company_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_below="@+id/tv_company_waybill_running_sum"
+                android:layout_marginTop="@dimen/space_17"
+                android:background="#f9f9f9"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:gravity="center_vertical"
+                    android:text="@string/company_imageView"
+                    android:textColor="#333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_company_sum_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_company_imageView"
+                android:orientation="horizontal" >
+				<com.yunqi.clientandroid.view.MyCompanyImage 
+				    android:id="@+id/gv_company_list"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:numColumns="2"
+				    />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

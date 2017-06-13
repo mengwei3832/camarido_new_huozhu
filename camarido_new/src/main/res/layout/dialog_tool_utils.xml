@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wheel="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+        <com.yunqi.clientandroid.utils.ProgressWheel
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_60"
+            wheel:matProg_barColor="@color/color_00bbff"
+            wheel:matProg_progressIndeterminate="true"/>
+        <TextView
+            android:id="@+id/tv_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:paddingLeft="@dimen/space_15"/>
+    </LinearLayout>
+</RelativeLayout>

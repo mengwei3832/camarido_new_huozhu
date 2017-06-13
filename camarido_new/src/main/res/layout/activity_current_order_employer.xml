@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_42"
+        android:layout_margin="@dimen/space_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_filter_employer"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_filter_employer"
+                style="@style/order_detail2"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="@string/status_choice" />
+
+            <ImageView
+                android:id="@+id/iv_filter_employer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/order_triangle_nomal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/current_order_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search_employer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/please_input_search"
+                android:imeOptions="actionSearch|actionUnspecified"
+                android:singleLine="true"
+                android:textColorHint="@color/color_D8D8D8"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/ib_search_employer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_5"
+                android:src="@drawable/discover_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_line_employer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/order_blue_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_current_order_employer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/order_backound" >
+    </FrameLayout>
+
+</LinearLayout>

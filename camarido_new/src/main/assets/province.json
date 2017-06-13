@@ -1,0 +1,2529 @@
+﻿{
+  "citylist": [
+    {
+      "id": 0,
+      "name": "不限",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000001,
+      "name": "北京市",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000002,
+          "name": "市辖区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000019,
+          "name": "县",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000022,
+      "name": "天津市",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000023,
+          "name": "市辖区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000039,
+          "name": "县",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000043,
+      "name": "河北省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000044,
+          "name": "石家庄市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000069,
+          "name": "唐山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000085,
+          "name": "秦皇岛市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000094,
+          "name": "邯郸市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000115,
+          "name": "邢台市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000136,
+          "name": "保定市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000163,
+          "name": "张家口市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000182,
+          "name": "承德市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000195,
+          "name": "沧州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000213,
+          "name": "廊坊市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000225,
+          "name": "衡水市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000238,
+      "name": "山西省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000239,
+          "name": "太原市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000251,
+          "name": "大同市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000264,
+          "name": "阳泉市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000271,
+          "name": "长治市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000286,
+          "name": "晋城市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000294,
+          "name": "朔州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000302,
+          "name": "晋中市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000315,
+          "name": "运城市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000330,
+          "name": "忻州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000346,
+          "name": "临汾市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000365,
+          "name": "吕梁市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000380,
+      "name": "内蒙古自治区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000381,
+          "name": "呼和浩特市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000392,
+          "name": "包头市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000403,
+          "name": "乌海市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000408,
+          "name": "赤峰市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000422,
+          "name": "通辽市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000432,
+          "name": "鄂尔多斯市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000441,
+          "name": "呼伦贝尔市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000456,
+          "name": "巴彦淖尔市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000465,
+          "name": "乌兰察布市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000478,
+          "name": "兴安盟",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000485,
+          "name": "锡林郭勒盟",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000498,
+          "name": "阿拉善盟",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000502,
+      "name": "辽宁省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000503,
+          "name": "沈阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000518,
+          "name": "大连市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000530,
+          "name": "鞍山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000539,
+          "name": "抚顺市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000548,
+          "name": "本溪市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000556,
+          "name": "丹东市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000564,
+          "name": "锦州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000573,
+          "name": "营口市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000581,
+          "name": "阜新市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000590,
+          "name": "辽阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000599,
+          "name": "盘锦市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000605,
+          "name": "铁岭市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000614,
+          "name": "朝阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000623,
+          "name": "葫芦岛市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000631,
+      "name": "吉林省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000632,
+          "name": "长春市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000644,
+          "name": "吉林市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000655,
+          "name": "四平市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000663,
+          "name": "辽源市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000669,
+          "name": "通化市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000678,
+          "name": "白山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000686,
+          "name": "松原市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000693,
+          "name": "白城市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000700,
+          "name": "延边朝鲜族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000709,
+      "name": "黑龙江省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000710,
+          "name": "哈尔滨市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000731,
+          "name": "齐齐哈尔市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000749,
+          "name": "鸡西市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000760,
+          "name": "鹤岗市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000770,
+          "name": "双鸭山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000780,
+          "name": "大庆市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000791,
+          "name": "伊春市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000810,
+          "name": "佳木斯市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000823,
+          "name": "七台河市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000829,
+          "name": "牡丹江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000841,
+          "name": "黑河市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000849,
+          "name": "绥化市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000861,
+          "name": "大兴安岭地区",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002309,
+      "name": "广西壮族自治区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002310,
+          "name": "南宁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002324,
+          "name": "柳州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002336,
+          "name": "桂林市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002355,
+          "name": "梧州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002364,
+          "name": "北海市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002370,
+          "name": "防城港市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002376,
+          "name": "钦州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002382,
+          "name": "贵港市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002389,
+          "name": "玉林市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002397,
+          "name": "百色市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002411,
+          "name": "贺州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002417,
+          "name": "河池市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002430,
+          "name": "来宾市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002438,
+          "name": "崇左市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002447,
+      "name": "海南省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002448,
+          "name": "海口市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002454,
+          "name": "三亚市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002456,
+          "name": "省直辖县级行政单位",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002476,
+      "name": "重庆市",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002477,
+          "name": "市辖区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002493,
+          "name": "县",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002515,
+          "name": "市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002520,
+      "name": "四川省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002521,
+          "name": "成都市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002542,
+          "name": "自贡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002550,
+          "name": "攀枝花市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002557,
+          "name": "泸州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002566,
+          "name": "德阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002574,
+          "name": "绵阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002585,
+          "name": "广元市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002594,
+          "name": "遂宁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002601,
+          "name": "内江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002608,
+          "name": "乐山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002621,
+          "name": "南充市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002632,
+          "name": "眉山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002640,
+          "name": "宜宾市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002652,
+          "name": "广安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002659,
+          "name": "达州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002668,
+          "name": "雅安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002678,
+          "name": "巴中市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002684,
+          "name": "资阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002690,
+          "name": "阿坝藏族羌族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002704,
+          "name": "甘孜藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002723,
+          "name": "凉山彝族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002741,
+      "name": "贵州省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002742,
+          "name": "贵阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002754,
+          "name": "六盘水市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002759,
+          "name": "遵义市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002775,
+          "name": "安顺市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002783,
+          "name": "铜仁地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002794,
+          "name": "黔西南布依族苗族自治",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002803,
+          "name": "毕节地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002812,
+          "name": "黔东南苗族侗族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002829,
+          "name": "黔南布依族苗族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002842,
+      "name": "云南省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002843,
+          "name": "昆明市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002859,
+          "name": "曲靖市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002870,
+          "name": "玉溪市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002881,
+          "name": "保山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002888,
+          "name": "昭通市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002901,
+          "name": "丽江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002908,
+          "name": "思茅市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002920,
+          "name": "临沧市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002930,
+          "name": "楚雄彝族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002941,
+          "name": "红河哈尼族彝族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002955,
+          "name": "文山壮族苗族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002964,
+          "name": "西双版纳傣族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002968,
+          "name": "大理白族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002981,
+          "name": "德宏傣族景颇族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002987,
+          "name": "怒江傈僳族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002992,
+          "name": "迪庆藏族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002996,
+      "name": "西藏自治区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002997,
+          "name": "拉萨市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003007,
+          "name": "昌都地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003019,
+          "name": "山南地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003032,
+          "name": "日喀则地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003051,
+          "name": "那曲地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003062,
+          "name": "阿里地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003070,
+          "name": "林芝地区",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000865,
+      "name": "上海市",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000866,
+          "name": "市辖区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000885,
+          "name": "县",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109000887,
+      "name": "江苏省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000888,
+          "name": "南京市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000903,
+          "name": "无锡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000913,
+          "name": "徐州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000926,
+          "name": "常州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000935,
+          "name": "苏州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000948,
+          "name": "南通市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000958,
+          "name": "连云港市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000967,
+          "name": "淮安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000977,
+          "name": "盐城市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000988,
+          "name": "扬州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109000997,
+          "name": "镇江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001005,
+          "name": "泰州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001013,
+          "name": "宿迁市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001020,
+      "name": "浙江省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001021,
+          "name": "杭州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001036,
+          "name": "宁波市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001049,
+          "name": "温州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001062,
+          "name": "嘉兴市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001071,
+          "name": "湖州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001078,
+          "name": "绍兴市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001086,
+          "name": "金华市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001097,
+          "name": "衢州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001105,
+          "name": "舟山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001111,
+          "name": "台州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001122,
+          "name": "丽水市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001133,
+      "name": "安徽省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001134,
+          "name": "合肥市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001143,
+          "name": "芜湖市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001152,
+          "name": "蚌埠市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001161,
+          "name": "淮南市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001169,
+          "name": "马鞍山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001175,
+          "name": "淮北市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001181,
+          "name": "铜陵市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001187,
+          "name": "安庆市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001200,
+          "name": "黄山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001209,
+          "name": "滁州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001219,
+          "name": "阜阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001229,
+          "name": "宿州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001236,
+          "name": "巢湖市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001243,
+          "name": "六安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001252,
+          "name": "亳州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001258,
+          "name": "池州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001264,
+          "name": "宣城市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001273,
+      "name": "福建省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001274,
+          "name": "福州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001289,
+          "name": "厦门市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001297,
+          "name": "莆田市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001304,
+          "name": "三明市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001318,
+          "name": "泉州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001332,
+          "name": "漳州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001345,
+          "name": "南平市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001357,
+          "name": "龙岩市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001366,
+          "name": "宁德市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001377,
+      "name": "江西省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001378,
+          "name": "南昌市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001389,
+          "name": "景德镇市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001395,
+          "name": "萍乡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001402,
+          "name": "九江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001416,
+          "name": "新余市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001420,
+          "name": "鹰潭市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001425,
+          "name": "赣州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001445,
+          "name": "吉安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001460,
+          "name": "宜春市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001472,
+          "name": "抚州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001485,
+          "name": "上饶市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001499,
+      "name": "山东省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001500,
+          "name": "济南市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001512,
+          "name": "青岛市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001526,
+          "name": "淄博市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001536,
+          "name": "枣庄市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001544,
+          "name": "东营市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001551,
+          "name": "烟台市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001565,
+          "name": "潍坊市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001579,
+          "name": "济宁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001593,
+          "name": "泰安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001601,
+          "name": "威海市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001607,
+          "name": "日照市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001613,
+          "name": "莱芜市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001617,
+          "name": "临沂市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001631,
+          "name": "德州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001644,
+          "name": "聊城市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001654,
+          "name": "滨州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001663,
+          "name": "荷泽市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001674,
+      "name": "河南省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001675,
+          "name": "郑州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001689,
+          "name": "开封市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001701,
+          "name": "洛阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001718,
+          "name": "平顶山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001730,
+          "name": "安阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001741,
+          "name": "鹤壁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001748,
+          "name": "新乡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001762,
+          "name": "焦作市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001775,
+          "name": "濮阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001783,
+          "name": "许昌市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001791,
+          "name": "漯河市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001798,
+          "name": "三门峡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001806,
+          "name": "南阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001821,
+          "name": "商丘市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001832,
+          "name": "信阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001844,
+          "name": "周口市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001856,
+          "name": "驻马店市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001868,
+      "name": "湖北省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001869,
+          "name": "武汉市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001884,
+          "name": "黄石市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001892,
+          "name": "十堰市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001902,
+          "name": "宜昌市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001917,
+          "name": "襄樊市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001928,
+          "name": "鄂州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001933,
+          "name": "荆门市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001940,
+          "name": "孝感市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001949,
+          "name": "荆州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001959,
+          "name": "黄冈市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001971,
+          "name": "咸宁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001979,
+          "name": "随州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001983,
+          "name": "恩施土家族苗族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001992,
+          "name": "省直辖行政单位",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109001997,
+      "name": "湖南省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109001998,
+          "name": "长沙市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002009,
+          "name": "株洲市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002020,
+          "name": "湘潭市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002027,
+          "name": "衡阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002041,
+          "name": "邵阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002055,
+          "name": "岳阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002066,
+          "name": "常德市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002077,
+          "name": "张家界市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002083,
+          "name": "益阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002091,
+          "name": "郴州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002104,
+          "name": "永州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002117,
+          "name": "怀化市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002131,
+          "name": "娄底市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002138,
+          "name": "湘西土家族苗族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109002147,
+      "name": "广东省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002302,
+          "name": "云浮市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002148,
+          "name": "广州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002162,
+          "name": "韶关市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002174,
+          "name": "深圳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002182,
+          "name": "珠海市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002187,
+          "name": "汕头市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002196,
+          "name": "佛山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002203,
+          "name": "江门市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002212,
+          "name": "湛江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002223,
+          "name": "茂名市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002231,
+          "name": "肇庆市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002241,
+          "name": "惠州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002248,
+          "name": "梅州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002258,
+          "name": "汕尾市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002264,
+          "name": "河源市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002272,
+          "name": "阳江市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002278,
+          "name": "清远市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002288,
+          "name": "东莞市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002289,
+          "name": "中山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002290,
+          "name": "潮州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109002295,
+          "name": "揭阳市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003078,
+      "name": "陕西省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003079,
+          "name": "西安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003094,
+          "name": "铜川市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003100,
+          "name": "宝鸡市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003114,
+          "name": "咸阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003130,
+          "name": "渭南市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003143,
+          "name": "延安市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003158,
+          "name": "汉中市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003171,
+          "name": "榆林市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003185,
+          "name": "安康市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003197,
+          "name": "商洛市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003206,
+      "name": "甘肃省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003207,
+          "name": "兰州市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003217,
+          "name": "嘉峪关市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003219,
+          "name": "金昌市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003223,
+          "name": "白银市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003230,
+          "name": "天水市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003239,
+          "name": "武威市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003245,
+          "name": "张掖市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003253,
+          "name": "平凉市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003262,
+          "name": "酒泉市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003271,
+          "name": "庆阳市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003281,
+          "name": "定西市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003290,
+          "name": "陇南市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003301,
+          "name": "临夏回族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003310,
+          "name": "甘南藏族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003319,
+      "name": "青海省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003320,
+          "name": "西宁市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003329,
+          "name": "海东地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003336,
+          "name": "海北藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003341,
+          "name": "黄南藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003346,
+          "name": "海南藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003352,
+          "name": "果洛藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003359,
+          "name": "玉树藏族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003366,
+          "name": "海西蒙古族藏族自治州",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003372,
+      "name": "宁夏回族自治区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003373,
+          "name": "银川市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003381,
+          "name": "石嘴山市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003386,
+          "name": "吴忠市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003392,
+          "name": "固原市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003399,
+          "name": "中卫市",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003404,
+      "name": "新疆维吾尔自治区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003405,
+          "name": "乌鲁木齐市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003415,
+          "name": "克拉玛依市",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003421,
+          "name": "吐鲁番地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003425,
+          "name": "哈密地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003429,
+          "name": "昌吉回族自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003438,
+          "name": "博尔塔拉蒙古自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003442,
+          "name": "巴音郭楞蒙古自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003452,
+          "name": "阿克苏地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003462,
+          "name": "克孜勒苏柯尔克孜自治",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003467,
+          "name": "喀什地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003480,
+          "name": "和田地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003489,
+          "name": "伊犁哈萨克自治州",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003500,
+          "name": "塔城地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003508,
+          "name": "阿勒泰地区",
+          "fullName": null,
+          "children": null
+        },
+        {
+          "id": 109003516,
+          "name": "省直辖行政单位",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003521,
+      "name": "台湾省",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003522,
+      "name": "香港特别行政区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    },
+    {
+      "id": 109003523,
+      "name": "澳门特别行政区",
+      "fullName": null,
+      "children": [
+        {
+          "id": 0,
+          "name": "不限",
+          "fullName": null,
+          "children": null
+        }
+      ]
+    }
+  ]
+}

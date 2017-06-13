@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical" >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                    android:id="@+id/ll_from"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="110dp">
+                <LinearLayout
+                        android:id="@+id/ll_from_up"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/space_15"
+                              android:textColor="@color/order_detail"
+                              android:layout_marginLeft="@dimen/space_13"
+                              android:text="@string/order_start"
+                            />
+                    <TextView
+                            android:id="@+id/tv_province_start_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_50"
+                            android:text="@string/order_province"
+                            android:textColor="@color/order_from_color"
+                            android:textSize="@dimen/space_15"
+                            android:gravity="center"
+                            android:background="@drawable/order_from_background"
+                            />
+                    <TextView
+                            android:id="@+id/tv_city_start_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_23"
+                            android:text="@string/order_city"
+                            android:textColor="@color/order_from_color"
+                            android:textSize="@dimen/space_15"
+                            android:gravity="center"
+                            android:background="@drawable/order_from_background"
+                            />
+
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_from_down"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textSize="@dimen/space_15"
+                              android:textColor="@color/order_detail"
+                              android:layout_marginLeft="@dimen/space_13"
+                              android:text="@string/order_end"
+                            />
+                    <TextView
+                            android:id="@+id/tv_province_end_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_50"
+                            android:text="@string/order_province"
+                            android:textColor="@color/order_from_color"
+                            android:textSize="@dimen/space_15"
+                            android:gravity="center"
+                            android:background="@drawable/order_from_background"
+                            />
+                    <TextView
+                            android:id="@+id/tv_city_end_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_23"
+                            android:text="@string/order_city"
+                            android:textColor="@color/order_from_color"
+                            android:textSize="@dimen/space_15"
+                            android:gravity="center"
+                            android:background="@drawable/order_from_background"
+                            />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_e4e4e4" />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_80">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/space_15"
+                          android:textColor="@color/order_detail"
+                          android:layout_marginLeft="@dimen/space_13"
+                          android:text="@string/order_price_range"
+                        />
+                <EditText
+                        android:id="@+id/et_price_min"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:gravity="center"
+                        android:background="@drawable/order_edittext"
+                        />
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_23"
+                        android:src="@drawable/order_line"
+                        />
+                <EditText
+                        android:id="@+id/et_price_max"
+                        android:layout_width="80dp"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_23"
+                        android:gravity="center"
+                        android:background="@drawable/order_edittext"
+                        />
+
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_e4e4e4" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/space_15"
+                      android:layout_marginTop="@dimen/space_13"
+                      android:textColor="@color/order_detail"
+                      android:layout_marginLeft="@dimen/space_13"
+                      android:text="@string/order_type"
+                    />
+            <RadioGroup
+                    android:id="@+id/rg_order_type"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                <RadioButton
+                        android:id="@+id/rb_price_tender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:text="@string/order_tender"
+                        android:button="@null"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15"
+                        android:gravity="center"
+                        android:background="@drawable/order_filter_selector"
+                        />
+                <RadioButton
+                        android:id="@+id/rb_price_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:text="@string/order_one_tender"
+                        android:button="@null"
+                        android:textColor="@color/order_from_color"
+                        android:textSize="@dimen/space_15"
+                        android:gravity="center"
+                        android:background="@drawable/order_filter_selector"
+                        />
+
+            </RadioGroup>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_e4e4e4" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_marginTop="@dimen/space_13"
+                    android:text="@string/order_catory"
+                    android:textColor="@color/order_detail"
+                    android:textSize="@dimen/space_15" />
+
+            <com.yunqi.clientandroid.view.FlowRadioGroup
+                    android:id="@+id/rg_filter_catory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+            </com.yunqi.clientandroid.view.FlowRadioGroup>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_10"
+                    android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_90" >
+
+        <View
+                android:id="@+id/view_history_rl_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_e4e4e4" />
+
+        <ImageButton
+                android:id="@+id/iv_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_history_rl_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_8"
+                android:background="@drawable/historyreset_button_selector" />
+
+        <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/login_button_selector"
+                android:text="@string/sure"
+                android:textColor="@color/color_ffffff"
+                android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

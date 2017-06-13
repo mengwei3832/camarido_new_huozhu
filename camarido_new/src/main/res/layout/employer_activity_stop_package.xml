@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <LinearLayout
+        android:id="@+id/ll_stop_package_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/color_ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_stop_package_begin"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5.5"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|bottom"
+                        android:singleLine="true"
+                        android:text="是大家的家"
+                        android:textColor="@color/color_303030"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stop_package_begin_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4.5"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:singleLine="true"
+                        android:text="是大家的家·大撒大大大"
+                        android:textColor="@color/color_606060"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:background="@color/color_00bbff" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/packagedetail_direction" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_stop_package_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5.5"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|bottom"
+                        android:singleLine="true"
+                        android:text="是大家的家"
+                        android:textColor="@color/color_303030"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stop_package_end_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4.5"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|top"
+                        android:singleLine="true"
+                        android:text="是大家的家·大撒大大大"
+                        android:textColor="@color/color_606060"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:background="@color/color_00bbff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employer_activity_stop_date"
+                    android:textColor="@color/color_00bbff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_stop_package_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016.10.26~2016.10.26"
+                    android:textColor="@color/color_303030"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/color_bebebe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10" >
+
+                <TextView
+                    android:id="@+id/tv_stop_package_daizhixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待执行4200车"
+                    android:textColor="@color/color_606060"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_stop_package_zaituzhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_13"
+                    android:text="待执行4200车"
+                    android:textColor="@color/color_606060"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_stop_package_daijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_13"
+                    android:text="待执行4200车"
+                    android:textColor="@color/color_606060"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_stop_package_yijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_13"
+                    android:text="待执行4200车"
+                    android:textColor="@color/color_606060"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_bebebe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_stop_package_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/color_bebebe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_ffffff" >
+            <Button
+                android:id="@+id/bt_stop_package_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                android:background="@drawable/quote_btn_red"
+                android:text="@string/employer_activity_stop_package"
+                android:textColor="@color/color_ffffff"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/bt_stop_package_jiankong"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                android:background="@drawable/sendbao_btn_background"
+                android:text="@string/employer_activity_stop_jiankong"
+                android:textColor="@color/color_ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- <ProgressBar 
+        android:id="@+id/pb_stop_package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/> -->
+    <ImageView 
+        android:id="@+id/iv_stop_package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/blank_words"/>
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_stop_package"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        ></com.yunqi.clientandroid.utils.ProgressWheel>
+
+</RelativeLayout>

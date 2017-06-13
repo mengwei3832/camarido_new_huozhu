@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_employer_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_60"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:maxLength="20"
+            android:id="@+id/et_employer_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/employer_company_name"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_employer_company_delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_employer_company_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/login_biankuang" >
+
+        <EditText
+            android:maxLength="12"
+            android:id="@+id/et_employer_company_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_biankuang"
+            android:hint="@string/employer_company_phone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:textColorHint="@color/color_D8D8D8" />
+
+        <ImageView
+            android:id="@+id/iv_employer_company_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_37"
+            android:src="@drawable/login_delete"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button 
+        android:id="@+id/bt_employer_company_shenqing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@color/color_2299EE"
+        android:text="@string/employer_company_shenqing"
+        android:textSize="17sp"
+        android:textColor="@color/color_ffffff"/>
+
+</LinearLayout>

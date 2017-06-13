@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout style="@style/tag_popuwindow" >
+
+        <TextView
+            android:id="@+id/tv_focuson_count"
+            style="@style/tag_popuwindow_text" />
+
+        <TextView
+            android:id="@+id/tv_cancel_focuson"
+            style="@style/tag_popuwindow_text"
+            android:text="@string/cancel_attention" />
+    </LinearLayout>
+
+</RelativeLayout>

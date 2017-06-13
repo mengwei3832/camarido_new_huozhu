@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_check_billing" >
+
+        <LinearLayout
+            android:id="@+id/ll_check_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_billing_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_order_detail_begin"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_begin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/space_20"
+                        android:singleLine="true"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_order_detail_end"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_end"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/space_20"
+                        android:singleLine="true"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/tv_biling_car_number"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_biling_car_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_billing_dian_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_30"
+                    android:background="@color/color_ffee99"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:text="@string/tv_biling_chengyun_detail"
+                        android:textColor="@color/color_606060"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_biling_arraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:src="@drawable/billing_arrow_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:id="@+id/ll_billing_show_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_address_detail_begin"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_biling_begin_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:ellipsize="end"
+                            android:paddingLeft="@dimen/space_20"
+                            android:singleLine="true"
+                            android:text="@string/tv_biling_address_detail_begin"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_address_detail_end"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_biling_end_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:ellipsize="end"
+                            android:paddingLeft="@dimen/space_20"
+                            android:singleLine="true"
+                            android:text="@string/tv_biling_address_detail_begin"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_xin_xi_bu"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_biling_xin_xi_bu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_send_package_time"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_biling_send_package_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_shop_price"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_shop_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_shop_category"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_shop_category"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/tv_biling_yun_dan_number"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_biling_yun_dan_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_billing_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_39"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_38"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space_20"
+                                android:layout_weight="2"
+                                android:text="@string/tv_biling_insurance_number"
+                                android:textColor="@color/color_00bbff"
+                                android:textSize="13sp" />
+
+                            <View
+                                android:layout_width="@dimen/space_1"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center_vertical"
+                                android:background="#D3F0FF" />
+
+                            <TextView
+                                android:id="@+id/tv_billing_insurance_number"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:paddingLeft="@dimen/space_20"
+                                android:textColor="@color/color_303030"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_1"
+                            android:background="#D3F0FF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/employer_fragment_billing_price"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_unitprice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/employer_fragment_billing_tusunlv"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_tusunlv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_billing_kuangfa"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_kuangfa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_billing_qianshou"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_qianshou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_billing_tusun"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_billing_tusun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_marginStart="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_check_guize"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_billing_xiahuaxian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/color_ff0000"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_billing_choose"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_choose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/employer_fragment_billing_ying"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_yingjie_money"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_billing_yingjie_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_15">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_tv_ticket_yingjie_detail"
+                            android:textColor="@color/color_ff4444"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_1"
+                            android:background="@color/color_ff4444"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_billing_detail_yingjie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/_dialog_ticket_yingjie_detail_all_yunfei"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_yingjie_detail_yunfei"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/_dialog_ticket_yingjie_detail_chao_dun"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_yingjie_detail_chao_dun"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/_dialog_ticket_yingjie_detail_chao_yun"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_yingjie_detail_chao_yun"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/_dialog_ticket_yingjie_detail_he_dun"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_yingjie_detail_he_dun"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:text="@string/employer_fragment_billing_shijie"
+                        android:textColor="@color/color_00bbff"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_shi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:id="@+id/rl_billing_jieTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_38"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:layout_weight="2"
+                            android:text="@string/employer_fragment_billing_jiesuantime"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="@dimen/space_1"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center_vertical"
+                            android:background="#D3F0FF" />
+
+                        <TextView
+                            android:id="@+id/tv_billing_jietime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textColor="@color/color_303030"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1"
+                        android:background="#D3F0FF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="#D3F0FF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/employer_fragment_billing_bei"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_25"
+                            android:layout_marginStart="@dimen/space_25"
+                            android:text="@string/employer_fragment_billing_zhu"
+                            android:textColor="@color/color_00bbff"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="#D3F0FF" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_zhuang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textColor="@color/color_303030"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_billing_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

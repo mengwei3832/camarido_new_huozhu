@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_eeeeee">
+
+    <LinearLayout
+        android:id="@+id/ll_external_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_eeeeee">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:padding="@dimen/space_7">
+
+                <EditText
+                    android:id="@+id/et_external_input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/external_input_phone"
+                    android:drawableLeft="@drawable/external_phone"
+                    android:drawablePadding="@dimen/space_10"
+                    android:hint="@string/employer_activity_external_input"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/space_10"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="@dimen/space_7">
+
+                <Button
+                    android:id="@+id/bt_external_add_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/external_add_phone"
+                    android:text="@string/employer_activity_external_button_add"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_external_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_eeeeee"
+            android:padding="@dimen/space_7">
+
+            <RelativeLayout
+                android:id="@+id/rl_external_share_wx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/external_button_share">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/external_weixin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/space_15"
+                        android:text="@string/employer_activity_external_share"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/progress_external"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"/>
+</RelativeLayout>

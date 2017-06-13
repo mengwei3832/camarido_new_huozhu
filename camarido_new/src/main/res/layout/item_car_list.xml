@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_80"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_11"
+        android:layout_marginRight="@dimen/space_11"
+        android:background="@drawable/carlistback"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.yunqi.clientandroid.view.CircleImageView
+                android:id="@+id/iv_vehiclelist_header"
+                android:layout_width="@dimen/space_52"
+                android:layout_height="@dimen/space_52"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:src="@drawable/vehiclelist_bg" />
+
+            <TextView
+                android:id="@+id/tv_vehiclelist_vehicleNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_vehiclelist_header"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_toRightOf="@id/iv_vehiclelist_header"
+                android:textColor="@color/color_229AEE"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_vehiclelist_xingji1"
+                android:layout_width="@dimen/space_18"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/tv_vehiclelist_vehicleNo"
+                android:layout_alignBottom="@+id/tv_vehiclelist_vehicleNo"
+                android:layout_toRightOf="@+id/tv_vehiclelist_vehicleNo" />
+
+            <ImageView
+                android:id="@+id/iv_vehiclelist_xingji2"
+                android:layout_width="@dimen/space_18"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/iv_vehiclelist_xingji1"
+                android:layout_alignBottom="@+id/iv_vehiclelist_xingji1"
+                android:layout_toRightOf="@+id/iv_vehiclelist_xingji1" />
+
+            <ImageView
+                android:id="@+id/iv_vehiclelist_xingji3"
+                android:layout_width="@dimen/space_18"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/iv_vehiclelist_xingji2"
+                android:layout_alignBottom="@+id/iv_vehiclelist_xingji2"
+                android:layout_toRightOf="@+id/iv_vehiclelist_xingji2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_vehiclelist_header"
+                android:layout_alignLeft="@+id/tv_vehiclelist_vehicleNo"
+                android:layout_below="@+id/tv_vehiclelist_vehicleNo"
+                android:layout_toRightOf="@id/iv_vehiclelist_header"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_vehiclelist_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:src="@drawable/owner"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclelist_state"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:background="@drawable/biaoqian"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_15"
+                android:src="@drawable/rightgo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

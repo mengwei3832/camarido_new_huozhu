@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_229AEE"
+        >
+
+    <ImageButton
+            android:id="@+id/ib_left"
+            style="@style/HoloButton.Borderless.Back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ></ImageButton>
+
+
+    <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextActionBarTitle"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/space_18"/>
+
+    <ImageButton
+            android:id="@+id/ib_right"
+            style="@style/HoloButton.Borderless.Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:src="@drawable/nav_back"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+    <TextView
+            android:id="@+id/tv_right"
+            style="@style/HoloButton.Borderless.Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="@dimen/space_15"
+            />
+
+</RelativeLayout>

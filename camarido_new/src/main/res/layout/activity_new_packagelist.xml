@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/allroutes_listbg" >
+
+            <LinearLayout
+                android:id="@+id/ll_packagelist_start"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_15"
+                android:background="@color/color_229AEE"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_packagelist_startabove"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_packagelist_startfollow"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_packagelist_msg"
+                android:layout_width="@dimen/space_115"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_toRightOf="@id/ll_packagelist_start"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/space_15" />
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- > -->
+                <!-- <TextView -->
+                <!-- android:id="@+id/tv_packagelist_package" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:textSize="15sp" -->
+                <!-- android:textColor="#333333" -->
+                <!-- /> -->
+                <!-- <TextView -->
+                <!-- android:id="@+id/tv_packagelist_order" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:textSize="15sp" -->
+                <!-- android:textColor="#333333" -->
+                <!-- /> -->
+
+
+                <!-- </LinearLayout> -->
+
+                <ImageView
+                    android:layout_width="@dimen/space_115"
+                    android:layout_height="@dimen/space_24"
+                    android:background="@drawable/packagelist_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_packagelist_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_packagelist_end"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ll_packagelist_msg"
+                android:background="@color/color_229AEE"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_packagelist_endabove"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_packagelist_endfollow"
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_19"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_packagelist_focuson"
+                    android:layout_width="@dimen/space_38"
+                    android:layout_height="@dimen/space_38"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/packagelist_cancel_foc"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/tv_packagelist_focusoncount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/packagelist_refreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_F9F9F9" />
+
+        <ProgressBar
+            android:id="@+id/pb_packagelist_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

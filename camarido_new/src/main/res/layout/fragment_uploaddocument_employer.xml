@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_uploaddoc_global_employer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16" >
+
+        <TextView
+            android:id="@+id/tv_uploadfrag_document_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:text="@string/myticket_uploadDocuments"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_uploadfrag_currentTime_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_11"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20" >
+
+        <EditText
+            android:id="@+id/et_uploadfrag_ticketcount_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@drawable/uploaddoc_input"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/myticket_qrcodeNumber"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ib_uploadfrag_qrcode_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/uploaddoc_annue"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10" >
+
+        <EditText
+            android:id="@+id/et_uploadfrag_alltotal_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@drawable/uploaddoc_input"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/myticket_inputCount"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/space_20"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:text="@string/myticket_totalTonnage"
+            android:textColor="@color/color_808080"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_uploadfrag_photoimg_employer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_200"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/uploaddoc_pickup"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_uploadfrag_myProssBarhandleText_employer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_uploadfrag_myProssBarhandle_employer"
+        style="@style/tallerBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_10"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_5"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_uploadfrag_save_employer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/tv_drivermsg_save"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

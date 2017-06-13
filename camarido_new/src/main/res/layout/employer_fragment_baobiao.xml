@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/ll_employer_bao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_employer_bao_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+    
+    <!-- <ProgressBar
+        android:id="@+id/pb_employer_bao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" /> -->
+    
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_employer_bao"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"
+        ></com.yunqi.clientandroid.utils.ProgressWheel>
+    
+   
+    <LinearLayout 
+        android:id="@+id/ll_employer_bao_detail_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/space_15"
+            android:text="@string/employer_fragment_bao_empty"/>
+        <Button 
+            android:id="@+id/bt_employer_bao_detail_sendbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_cartype"
+            android:layout_margin="@dimen/space_40"
+            android:textColor="@color/color_ffffff"
+            android:text="@string/employer_fragment_bao_senbao"/>
+    </LinearLayout>
+
+</RelativeLayout>

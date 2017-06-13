@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_188"
+                android:background="@drawable/biaodanbeijing" >
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingTop="@dimen/space_6"
+                    android:text="一口价"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/space_15"
+                    android:paddingTop="@dimen/space_6"
+                    android:text="11月24日-12月27日"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_meizhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingTop="@dimen/space_50"
+                    android:text="面煤"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_employer_biao_detail_qidian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_employer_biao_detail_meizhong"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_15"
+                    android:src="@drawable/qidian" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_qidian"
+                    android:layout_width="@dimen/space_200"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_employer_biao_detail_qidian"
+                    android:layout_alignTop="@+id/iv_employer_biao_detail_qidian"
+                    android:layout_below="@+id/tv_employer_biao_detail_meizhong"
+                    android:layout_toRightOf="@+id/iv_employer_biao_detail_qidian"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="山西阳泉"
+                    android:textColor="@color/color_666666" />
+
+                <ImageView
+                    android:id="@+id/iv_employer_biao_detail_zhongdian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_employer_biao_detail_qidian"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:paddingLeft="@dimen/space_15"
+                    android:src="@drawable/zhongdian" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_zhongdian"
+                    android:layout_width="@dimen/space_200"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_employer_biao_detail_zhongdian"
+                    android:layout_alignTop="@+id/iv_employer_biao_detail_zhongdian"
+                    android:layout_below="@+id/tv_employer_biao_detail_qidian"
+                    android:layout_toRightOf="@+id/iv_employer_biao_detail_zhongdian"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="陕西神木"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_buzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_employer_biao_detail_zhongdian"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:paddingLeft="@dimen/space_15"
+                    android:text="补贴100.00元"
+                    android:textColor="@color/color_999999"
+                    android:textSize="11sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_employer_biao_detail_baoxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_employer_biao_detail_buzhu"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_toRightOf="@+id/tv_employer_biao_detail_buzhu"
+                    android:src="@drawable/huoxian"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_baoxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_employer_biao_detail_baoxian"
+                    android:layout_toRightOf="@+id/iv_employer_biao_detail_baoxian"
+                    android:text="保险"
+                    android:textColor="@color/color_999999"
+                    android:textSize="11sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_carSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_employer_biao_detail_date"
+                    android:layout_below="@+id/tv_employer_biao_detail_date"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_25"
+                    android:text="233/330车"
+                    android:textColor="@color/color_666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_zhuangtai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_employer_biao_detail_carSum"
+                    android:layout_below="@+id/tv_employer_biao_detail_carSum"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@drawable/yiwancheng"
+                    android:gravity="center"
+                    android:text="已完成"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_employer_biao_detail_danjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_employer_biao_detail_zhuangtai"
+                    android:layout_below="@+id/tv_employer_biao_detail_zhuangtai"
+                    android:layout_marginTop="@dimen/space_17"
+                    android:text="￥188.00吨"
+                    android:textColor="@color/color_ff0000"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="@string/employer_bao_huopinxinxi"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_35" >
+
+                    <TextView
+                        android:id="@+id/tv_employer_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:text="@string/employer_bao_danjia"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_employer_bao_detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="100.00元"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:background="@color/color_f1f1f1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_35" >
+
+                    <TextView
+                        android:id="@+id/tv_employer_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:text="@string/employer_bao_pinzhong"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_employer_bao_detail_pinzhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="面煤"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:background="@color/color_f1f1f1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_35" >
+
+                    <TextView
+                        android:id="@+id/tv_employer_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:text="@string/employer_bao_dunshu"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_employer_bao_detail_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="100.00吨"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="@string/employer_bao_zhixingzhuangkuang"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+            
+            <include layout="@layout/employer_activity_baoliebiao_foot_detail"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

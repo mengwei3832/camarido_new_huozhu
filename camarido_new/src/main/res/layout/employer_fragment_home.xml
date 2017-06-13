@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff" >
+    
+    <LinearLayout
+        android:id="@+id/ll_employer_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_162" >
+
+            <com.yunqi.clientandroid.view.ViewPagerExpand
+                android:id="@+id/vp_employer_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.yunqi.clientandroid.view.CircleIndicator
+                android:id="@+id/employer_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                CircleIndicator:ci_background="#999966"
+                CircleIndicator:ci_gravity="center"
+                CircleIndicator:ci_margin="5dp"
+                CircleIndicator:ci_mode="outside"
+                CircleIndicator:ci_radius="3dp"
+                CircleIndicator:ci_selected_background="#FF0000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="@string/employer_home_heard"
+                android:textColor="@color/color_666666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_140"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_ffffff" >
+
+            <View
+                android:id="@+id/iv_employer_header_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/color_2299EE" />
+
+            <ListView
+                android:id="@+id/lv_employer_header_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_employer_header_line"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20" />
+
+            <ImageView
+                android:id="@+id/iv_employer_foot_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/space_5"
+                android:src="@drawable/jianbian" />
+
+            <ImageView
+                android:id="@+id/iv_employer_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/empty_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_employer_home_anniu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f1f1f1"
+            android:paddingBottom="@dimen/space_16" >
+
+            <RelativeLayout
+                android:id="@+id/rl_employer_home_fabao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_fahuo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_fabao_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_fahuo"
+                        android:paddingLeft="@dimen/space_10"
+                        android:paddingTop="@dimen/space_10"
+                        android:text="@string/employer_home_fahuo"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/space_17" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_employer_home_zhixing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_qianshou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_shenhe_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_qianshou"
+                        android:paddingLeft="@dimen/space_10"
+                        android:paddingTop="@dimen/space_10"
+                        android:text="@string/employer_home_qianshou"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/space_17" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/ticket_popuwindow" 
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_current_ticket_all"
+            style="@style/employer_popuwindow_text_ticket"
+            android:text="@string/employer_activity_current_ticket_all" />
+
+        <!--  <TextView
+            android:id="@+id/tv_current_ticket_zhixing"
+            style="@style/employer_popuwindow_text_ticket"
+            android:text="@string/employer_activity_current_ticket_zhixing" />-->
+        <TextView
+            android:id="@+id/tv_current_ticket_qianshou"
+            style="@style/employer_popuwindow_text_ticket"
+            android:text="@string/employer_activity_current_ticket_qianshou" />
+
+        <TextView
+            android:id="@+id/tv_current_ticket_check"
+            style="@style/employer_popuwindow_text_ticket"
+            android:text="@string/employer_activity_current_ticket_check" />
+
+        <TextView
+            android:id="@+id/tv_current_ticket_history"
+            style="@style/employer_popuwindow_text_ticket"
+            android:text="@string/employer_activity_current_ticket_history" />
+    </LinearLayout>
+
+</RelativeLayout>

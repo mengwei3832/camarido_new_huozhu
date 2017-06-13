@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/sv_discover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_attentionDetail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:textColor="@color/attention_first_text_color"
+                    android:textSize="@dimen/space_15" />
+
+                <TextView
+                    android:id="@+id/tv_attentionDetail_read_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_18"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/space_9" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_attentionDetail_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/space_12" />
+
+                <TextView
+                    android:id="@+id/tv_attentionDetail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@id/tv_attentionDetail_author"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/space_12" />
+
+                <LinearLayout
+                    android:id="@+id/ll_attentionDetail_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@id/tv_attentionDetail_date"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/space_3" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_attentionDetail_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_30"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_toRightOf="@id/tv_attentionDetail_date"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/space_3" >
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/color_e4e4e4" />
+
+            <TextView
+                android:id="@+id/tv_attentionDetail_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_20" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_discover_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.tencent.smtt.sdk.WebView>
+
+    <com.yunqi.clientandroid.utils.ProgressWheel
+        android:id="@+id/pb_attentionDetail_bar"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_80"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/color_00bbff"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:id="@+id/iv_attentionDetail_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blank_words"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
