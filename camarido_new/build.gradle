@@ -11,7 +11,10 @@ android {
         multiDexEnabled true
     }
 
-   
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
 
     buildTypes {
         release {
